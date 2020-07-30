@@ -11,16 +11,18 @@ function createDeck() { // we create a function createdeck (back-end function)
                     // the variable from parseInt method and or change it from number to an integer
                     if (values[i] == "J" || values[i] == "Q" || values[i] == "K") // this is an if statement with 3 'or' states, it returns true or false
                         weight = 10; // from above we give the value of 10 => if it's a j q or K the value will be 10
-                    if (values[i] == "A") //
+                    if (values[i] == "A")
                         weight = 11;
-                    var card = { 
+                    var card = { // create an object called card with few properties
                         Value: values[i], 
                         Suit: suits[x], 
                         Weight: weight 
                     };
-                    deck.push(card);
+                    deck.push(card); // we push the card object to the deck array we created at line 5
                 }
             }
+
+            
 }
 
 
