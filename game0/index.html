@@ -10,23 +10,23 @@
   <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
   <div class="game">
     <div class="vs">
-      <div class="player-one">
-        <img src="img/rock.svg" alt="Rock">
+      <div class="player-one" >
+        <img id='src-player' src="img/rock.svg" alt="Paper" width="200" height="200">
       </div>
       <p>VS</p>
       <div class="player-two">
-        <img src="img/rock.svg" alt="Rock">
+        <img id="src-computer" src="img/rock.svg" alt="Rock" width="200" height="200">
       </div>
     </div>
     <div class="buttons-user">
-      <input type="image" id="button-rock" src="img/rock.svg" alt="Rock" width="48" height="48">
-      <input type="image" id="button-paper" src="img/rock.svg" alt="Paper" width="48" height="48">
-      <input type="image" id="button-scissors" src="img/rock.svg" alt="Scissors" width="48" height="48">
-      <input type="image" id="button-lizard" src="img/rock.svg" alt="Lizard" width="48" height="48">
-      <input type="image" id="button-spock" src="img/rock.svg" alt="Rock" width="48" height="48">
+      <input type="image" id="button-rock" value="rock" src="img/rock.svg" alt="Rock" width="48" height="48">
+      <input type="image" id="button-paper" value="paper" src="img/paper.svg" alt="Paper" width="48" height="48">
+      <input type="image" id="button-scissors" value="scissors" src="img/scissors.svg" alt="Scissors" width="48" height="48">
+      <input type="image" id="button-lizard" value="lizard" src="img/lizard.svg" alt="Lizard" width="48" height="48">
+      <input type="image" id="button-spock" value="spock" src="img/spock.svg" alt="Rock" width="48" height="48">
     </div>
     <div class="button-computer">
-      <input type="button" class="button button-computer"/>
+      <input type="button" id="computer" class="button button-computer"/>
     </div>
     <div class="result">
       <p class="target"></p>
