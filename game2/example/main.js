@@ -17,7 +17,7 @@
                         weight = 10;
                     if (values[i] == "A")
                         weight = 11;
-                    var card = { Value: values[i], Suit: suits[x], Weight: weight };
+                    var card = {Value: values[i], Suit: suits[x], Weight: weight};
                     deck.push(card);
                 }
             }
