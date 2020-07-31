@@ -162,7 +162,7 @@ document.getElementById('button-scissors').addEventListener('click', function (e
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
     let result = compare(userChoice, computerChoice);
     document.getElementById('target').innerHTML = result;
-
+  });
 });
 
 // the user picks LIZARD
@@ -188,6 +188,7 @@ document.getElementById('button-lizard').addEventListener('click', function (e) 
     let result = compare(userChoice, computerChoice);
     document.getElementById('target').innerHTML = result;
 
+});
 });
 
 // the user picks SPOCK
@@ -216,19 +217,5 @@ document.getElementById('button-spock').addEventListener('click', function (e) {
     document.getElementById('target').innerHTML = result;
     
   });
- 
- });
-
-
-
-
-
-
-
-
-    document.getElementById('src-computer').src = `img/${computerChoice}.svg`
-    let result = compare(userChoice, computerChoice);
-    document.getElementById('target').textContent = result;
-    
-  });
 });
+
