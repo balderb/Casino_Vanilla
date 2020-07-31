@@ -111,6 +111,7 @@ document.getElementById('button-rock').addEventListener('click', function (e) { 
     document.getElementById('src-computer').src = `img/${computerChoice}.svg` // change the source of the image to the value that the computer picked
     let result = compare(userChoice, computerChoice); // compare the two choices with the function compare ()
     document.getElementById('target').innerHTML = result;
+
   });
 });
 
@@ -161,7 +162,7 @@ document.getElementById('button-scissors').addEventListener('click', function (e
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
     let result = compare(userChoice, computerChoice);
     document.getElementById('target').innerHTML = result;
-  });
+
 });
 
 // the user picks LIZARD
@@ -186,7 +187,7 @@ document.getElementById('button-lizard').addEventListener('click', function (e) 
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
     let result = compare(userChoice, computerChoice);
     document.getElementById('target').innerHTML = result;
-  });
+
 });
 
 // the user picks SPOCK
@@ -196,6 +197,7 @@ document.getElementById('button-spock').addEventListener('click', function (e) {
 
 
   document.getElementById('computer').addEventListener('click', function(event) {
+
     computerChoice = Math.floor(Math.random() * 5);
     switch (computerChoice) { 
       case 0: computerChoice = "rock"; 
@@ -224,7 +226,9 @@ document.getElementById('button-spock').addEventListener('click', function (e) {
 
 
 
-	
-
-		
-  
+    document.getElementById('src-computer').src = `img/${computerChoice}.svg`
+    let result = compare(userChoice, computerChoice);
+    document.getElementById('target').textContent = result;
+    
+  });
+});
