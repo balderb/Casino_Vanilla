@@ -1,64 +1,64 @@
 // make a function that compares the two choices
 function compare(choice1, choice2) {
   if (choice1 == choice2) {
-    console.log('tie')
+    return `it's a tie!`
   } else if (choice1 == 'rock') {
     if (choice2 == 'scissors') {
-      console.log("Rock wins");
+      return `rock crushes scissors <br> You Win!`;
     } else if (choice2 == 'paper') {
-      console.log("Paper wins");
+      return `paper covers rock <br> You Lose`;
     } else if (choice2 == 'lizard') {
-      console.log("Rock wins");
+      return `rock crushes lizard <br> You Win!`;
     } else if (choice2 == 'spock') {
-      console.log("spock wins");
+      return `spock vaporizes rock <br> You Lose`;
     }
   }
 
   else if (choice1 == "paper") {
     if (choice2 == "scissors") {
-      console.log("Scissors wins!");
+      return `scissors cut paper <br> You Lose`;
     } else if (choice2 == "rock") {
-      console.log("Paper wins!");
+      return `paper covers rock <br> You Win!`;
     } else if (choice2 == "lizard") {
-      console.log("Lizard wins!");
+      return `lizard eats paper <br> You Lose`;
     } else if (choice2 == 'spock') {
-      console.log("Paper wins!");
+      return `paper disproves spock <br> You Win!`;
     }
   }
 
   else if (choice1 == "scissors") {
     if (choice2 == "paper") {
-      console.log("Scissors wins!");
+      return `scissors cut paper <br> You Win!`;
     } else if (choice2 == "rock") {
-      console.log("Rock wins!");
+      return `rock crushes scissors <br> You Lose!`;
     } else if (choice2 == "lizard") {
-      console.log("Scissors wins!");
+      return `scissors decapitate lizard <br> You Win!`;
     } else if (choice2 == 'spock') {
-      console.log("Spock wins!");
+      return `spock smashes scissors <br> You Lose`;
     }
   }
 
   else if (choice1 == "lizard") {
     if (choice2 == "scissors") {
-      console.log("Scissors wins!");
+      return `scissors decapitate lizard <br> You Lose`;
     } else if (choice2 == "rock") {
-      console.log("Rock wins!");
+      return `rock crushes lizard <br> You Lose`;
     } else if (choice2 == "paper") {
-      console.log("Lizard wins!");
+      return `lizard eats paper <br> You Win!`;
     } else if (choice2 == 'spock') {
-      console.log("Lizard wins!");
+      return `lizard poisons spock <br> You Win!`;
     }
   }
 
   else if (choice1 == "spock") {
     if (choice2 == "scissors") {
-      console.log("Spock wins!");
+      return `spock smashes scissors <br> You Win!`;
     } else if (choice2 == "rock") {
-      console.log("Spock wins!");
+      return `spock vaporizes rock <br> You Win!`;
     } else if (choice2 == "lizard") {
-      console.log("Lizard wins!");
+      return `lizard poisons spock <br> You Lose`;
     } else if (choice2 == 'paper'){
-      console.log("Paper wins!");
+      return `paper disproves spock <br> You Lose`;
     }
   }
 };
@@ -97,7 +97,8 @@ document.getElementById('button-rock').addEventListener('click', function (e) { 
 
   document.getElementById('computer').addEventListener('click', function(event) { // after the click on the rock button, do something when clicking on the computer button
     document.getElementById('src-computer').src = `img/${computerChoice}.svg` // change the source of the image to the value that the computer picked
-    compare(userChoice, computerChoice); // compare the two choices with the function compare ()
+    let result = compare(userChoice, computerChoice); // compare the two choices with the function compare ()
+    document.getElementById('target').textContent = result;
   });
 });
 
@@ -105,12 +106,12 @@ document.getElementById('button-rock').addEventListener('click', function (e) { 
 document.getElementById('button-paper').addEventListener('click', function (e) {
   let userChoice = 'paper';
   document.getElementById('src-player').src = 'img/paper.svg';
-  console.log(userChoice);
-  console.log(computerChoice);
+
 
   document.getElementById('computer').addEventListener('click', function(event) {
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
-    compare(userChoice, computerChoice);
+    let result = compare(userChoice, computerChoice);
+    document.getElementById('target').textContent = result;
   });
 });
 
@@ -118,12 +119,12 @@ document.getElementById('button-paper').addEventListener('click', function (e) {
 document.getElementById('button-scissors').addEventListener('click', function (e) {
   let userChoice = 'scissors'
   document.getElementById('src-player').src = 'img/scissors.svg';
-  console.log(userChoice);
-  console.log(computerChoice);
+
 
   document.getElementById('computer').addEventListener('click', function(event) {
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
-    compare(userChoice, computerChoice);
+    let result = compare(userChoice, computerChoice);
+    document.getElementById('target').textContent = result;
   });
 });
 
@@ -131,12 +132,12 @@ document.getElementById('button-scissors').addEventListener('click', function (e
 document.getElementById('button-lizard').addEventListener('click', function (e) {
   let userChoice = 'lizard';
   document.getElementById('src-player').src = 'img/lizard.svg';
-  console.log(userChoice);
-  console.log(computerChoice);
+
 
   document.getElementById('computer').addEventListener('click', function(event) {
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
-    compare(userChoice, computerChoice);
+    let result = compare(userChoice, computerChoice);
+    document.getElementById('target').textContent = result;
   });
 });
 
@@ -144,11 +145,16 @@ document.getElementById('button-lizard').addEventListener('click', function (e) 
 document.getElementById('button-spock').addEventListener('click', function (e) {
   let userChoice = 'spock';
   document.getElementById('src-player').src = 'img/spock.svg';
-  console.log(userChoice);
-  console.log(computerChoice);
+
 
   document.getElementById('computer').addEventListener('click', function(event) {
-    compare(userChoice, computerChoice);
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
+    let result = compare(userChoice, computerChoice);
+    document.getElementById('target').textContent = result;
+    
   });
 });
+
+document.getElementById('reset').addEventListener('click', function(event) {
+  location.reload();
+})
