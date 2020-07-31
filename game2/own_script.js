@@ -85,4 +85,3 @@ function shuffle() { // this function ramdomizes the deck
 
 
 
-
