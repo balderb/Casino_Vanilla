@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../home.css">
     <title>Casino Vanilla</title>
 </head>
+
 <body>
-    <div class="cointener">
-        <img src="img/logo.png"alt="logo">
-        <div class ="box">
-           <div class="game">
-               <img src="img/card-rpsls.png" alt ="RPSLS">
-                <p>Rock, Paper, Scissors, Lizard, Spock</p>
-                <input type="button"value="Play Game" href="" />
-            </div>
-            <div class="game">
-                <img src="img/card-blackjack.png" alt ="Blackjack">
-                 <p>Blackjack</p>
-                 <input type="button"value="Play Game" href="" />
-             </div>
-             <div class="game">
-                <img src="img/card-memory.png" alt ="Memory">
-                 <p>Memory</p>
-                 <input type="button"value="Play Game" href="" />
-             </div>
-             <div class="game">
-                <img src="img/card-movingBlocks.png" alt ="Moving-bloks">
-                 <p>Moving blocks</p>
-                 <input type="submit" value="Play Game" href=""/> 
-             </div>
-       </div>
-       <div class ="minibox white">
-           <div class="white" id="games-played"></div>
-           <div class="white" id="wins"></div>
-           <div calss="white" id="total-score"></div>
-       </div>
-       <div class = "minibox black">
-            <h6>GO TO</h6>
-            <a href="">Home</a>
-            <a href="">RPSLS</a>
-            <a href="">Blackjack</a>
-            <a href="">Memory</a>
-            <a href="">Moving blocks</a>
-       </div>
+    <div class="header">
+        <img src="img/logo@2x.png" alt="logo" class='center'>
     </div>
-    <script src = script.js></script>
+    <div class="container">
+        <div class="row">
+            <div class="column col-m-6">
+                <div class="card">
+                    <img src="img/card-rpsls@2x.png" alt="RPSLS" class="image">
+                    <p>Rock, Paper, Scissors, </br> Lizard, Spock</p>
+                    <input type="button" value="Play Game" href="" class="btn-play"/>
+                </div>
+            </div>
+
+            <div class="column col-m-6">
+                <div class="card">
+                    <img src="img/card-blackjack@2x.png" alt="Blackjack" class="image">
+                    <p>Blackjack</p>
+                    <input type="button" value="Play Game" href="" class="btn-play"/>
+                </div>
+            </div>
+
+            <div class="column col-m-6">
+                <div class="card">
+                    <img src="img/card-memory@2x.png" alt="Memory" class="image">
+                    <p>Memory</p>
+                    <input type="button" value="Play Game" href="" class="btn-play"/>
+                </div>
+            </div>
+
+            <div class="column col-m-6">
+                <div class="card">
+                    <img src="img/card-movingBlocks@2x.png" alt="Moving-bloks" class="image">
+                    <p>Moving blocks</p>
+                    <input type="submit" value="Play Game" href="" class="btn-play"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="score">
+        <div class="white" id="games-played"></div>
+        <div class="white" id="wins"></div>
+        <div calss="white" id="total-score"></div>
+    </div>
+    <div class="footer">
+        <p>GO TO</p>
+        <a href="">Home</a>
+        <a href="">RPSLS</a>
+        <a href="">Blackjack</a>
+        <a href="">Memory</a>
+        <a href="">Moving blocks</a>
+    </div>
+
+    <script src=script.js></script>
 </body>
+
 </html>
