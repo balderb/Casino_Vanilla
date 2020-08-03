@@ -110,7 +110,7 @@ function compare(choice1, choice2) {
     //  document.getElementById("computer-score").innerHTML = computerScore;
       return `spock smashes scissors <br> You Win!`;
     } else if (choice2 == "rock") {
-      playerScore++;
+      playerScore ++;
     //  document.getElementById("player-score").innerHTML = playerScore;
     //  document.getElementById("computer-score").innerHTML = computerScore;
       return `spock vaporizes rock <br> You Win!`;
@@ -176,7 +176,7 @@ document.getElementById('button-rock').addEventListener('click', function (e) { 
     document.getElementById('src-computer').src = `img/${computerChoice}.svg` // change the source of the image to the value that the computer picked
     let result = compare(userChoice, computerChoice); // compare the two choices with the function compare ()
     document.getElementById('target').innerHTML = result;
-    document.getElementById("computer-score").innerHTML = computerScore;
+    document.getElementById("computer-score").innerHTML =computerScore;
     document.getElementById("player-score").innerHTML = playerScore;
   });
   
@@ -204,8 +204,8 @@ document.getElementById('button-paper').addEventListener('click', function (e) {
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
     let result = compare(userChoice, computerChoice);
     document.getElementById('target').innerHTML = result;
-    document.getElementById("computer-score").innerHTML = computerScore;
-    document.getElementById("player-score").innerHTML = playerScore;
+    document.getElementById("computer-score").innerHTML = (computerScore - 1);
+    document.getElementById("player-score").innerHTML = (playerScore - 1);
   });
  
 });
@@ -232,10 +232,10 @@ document.getElementById('button-scissors').addEventListener('click', function (e
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
     let result = compare(userChoice, computerChoice);
     document.getElementById('target').innerHTML = result;
+    document.getElementById("computer-score").innerHTML = (computerScore - 1);
+    document.getElementById("player-score").innerHTML = (playerScore - 1);
   });
-  console.log("computer score :"+ (computerScore = new ComputerScore));
- console.log("player score :" + (playerScore = new PlayerScore));
- console.log("tie"+ (tie = new Tie));
+  
 });
 
 // the user picks LIZARD
@@ -261,7 +261,8 @@ document.getElementById('button-lizard').addEventListener('click', function (e) 
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
     let result = compare(userChoice, computerChoice);
     document.getElementById('target').innerHTML = result;
-    
+    document.getElementById("computer-score").innerHTML = (computerScore - 1);
+    document.getElementById("player-score").innerHTML = (playerScore - 1);
 
 });
 
@@ -291,7 +292,7 @@ document.getElementById('button-spock').addEventListener('click', function (e) {
     document.getElementById('src-computer').src = `img/${computerChoice}.svg`
     let result = compare(userChoice, computerChoice);
     document.getElementById('target').innerHTML = result;
-    document.getElementById("computer-score").innerHTML = computerScore;
+    document.getElementById("computer-score").innerHTML = computerScore ;
     document.getElementById("player-score").innerHTML = playerScore;
     
   });
