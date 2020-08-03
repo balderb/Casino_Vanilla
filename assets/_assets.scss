@@ -21,6 +21,11 @@ $darkGrey: #202020;
 
 // style for the buttons
 @mixin button {
-
+  font-family: 'Raleway', sans-serif;
+  background-color: $darkGrey;
+  border: 2px solid $yellow;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: $lightGrey;
 };
 
