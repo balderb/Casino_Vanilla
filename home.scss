@@ -1,7 +1,7 @@
 // import fonts (better in html page)
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-@import "grid.scss";
+@import "grid";
 
 // main colors
 $yellow: #F0EC7B;
@@ -11,7 +11,9 @@ $darkGrey: #202020;
 // shadow effect // not really sure if the shadow is beautiful, you can adapt
 @mixin shadow {
   box-shadow: 0px 6px 6px #000000;
-};
+}
+
+;
 
 // font style for the game names on homepage
 @mixin game-names {
@@ -19,24 +21,28 @@ $darkGrey: #202020;
   color: $lightGrey;
   font-size: 36px;
   font-style: italic;
-};
+}
+
+;
 
 // style for the buttons
 @mixin button {
+  font-family: 'Raleway', sans-serif;
   background-color: $darkGrey;
   border: 2px solid $yellow;
   font-size: 24px;
   padding: 10px 20px;
   color: $lightGrey;
-  text-align: left;
-};
+}
+
+;
 
 
 
 body {
   background-color: $darkGrey;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .center {
@@ -48,18 +54,80 @@ body {
   padding-bottom: 30px;
 }
 
-/* Float two columns side by side */
+.column {
+  padding-bottom: 160px;
+}
 
-  .image {
-  width: 80%;
+.image-container {
   text-align: center;
+}
+
+.image {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  padding-left: 60px;
+  @include game-names;
+}
+
+.btn-play {
+  @include button;
+  margin-left: 60px;
+}
+
+.btn-play:hover {
+  background-color: $yellow;
+  color: $darkGrey;
+}
+
+.score {
+  background-color: $lightGrey;
+  margin: 0;
+  
+  p {
+    color: $darkGrey;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    text-align: center;
   }
+
+  .text {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .number {
+    font-size: 60px;
+    padding-bottom: 0;
+    margin-bottom:0;
+  }
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 80px;
 
   p {
-    padding-left: 60px;
-    @include game-names;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    padding-bottom: 16px;
   }
 
-  .btn-play {
-    @include button;
+  a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: $lightGrey;
+    padding-left: 60px;
   }
+
+  a:hover {
+    text-decoration: underline;
+    color: $yellow;
+  }
+}
