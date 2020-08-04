@@ -52,6 +52,7 @@ function checkIfMatch() {
   }
 };
 
+// function to reset the board: unlock board, no cards flipped, no value for firstCard and secondCard
 function resetBoard() {
 hasFlippedCard = false;
 lockBoard = false;
@@ -59,6 +60,14 @@ firstCard = null;
 secondCard = null;
 };
 
+// Shuffle the order of the cards using order from flexbox
+// Make it an IIFE (immediately invoked function expression) = start when page loads
+(function shuffle() {
+  cards.forEach(card => { // do this function for every card (div)
+    let rdmPosition = Math.floor(Math.random()*12); // create a random number between 0 and 11
+    card.style.order = rdmPosition; // Give the random number to the order (flexbox) of the card
+  });
+})();
 
 // Go through the nodelist of divs and give them an eventlistener
 cards.forEach(card => card.addEventListener('click', flipCard));
