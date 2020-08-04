@@ -15,6 +15,7 @@ function createDeck() {                                     // here we are going
                 if (values[v] === "A")
                 points = 11;
             
+                
             let card = {                                    // here we basically create an object and put the values for the card inside it by using properties
                 Value: values[v],                           // I wonder if we can also put a method inside here where we can also flip the card, or should we place that somewhere else?
                 Suits: suits[s],
