@@ -5,7 +5,7 @@ let deck = new Array ();
 // Now we are going to create a deck (of cards) to play with.
 
 function createDeck() {                                     // here we are going to create the deck by using the "suits" values and "values" values loop in order to get a randomized combination
-    // deck = new Array();
+     // deck = new Array();
     for (let v = 0; v < values.length; v++) {
         for(let s = 0; s < suits.length; s++) {
             
@@ -15,7 +15,6 @@ function createDeck() {                                     // here we are going
                 if (values[v] === "A")
                 points = 11;
             
-                
             let card = {                                    // here we basically create an object and put the values for the card inside it by using properties
                 Value: values[v],                           // I wonder if we can also put a method inside here where we can also flip the card, or should we place that somewhere else?
                 Suits: suits[s],
@@ -38,16 +37,22 @@ function scramble()
     }
 }
 
+// from here it will be the "user interface" section
+
 document.getElementById('start').addEventListener('click', () => { 
     createDeck();
     scramble();
     let playerCards = [];
         playerCards = [deck.pop(), deck.pop()];
-        console.log(playerCards);
+        console.log(playerCards);        
+         document.getElementById("displayPlayer").innerHTML = playerCards.map(x => x.Value);
 });
+
+// I think what we need to do is take the playerCards array and loop through it with ForEach and create a new array. 
 
 document.getElementById("draw").addEventListener('click', () => {
     let playerCards = [];
     playerCards.push(deck.pop());
     console.log(playerCards);
 })
+
