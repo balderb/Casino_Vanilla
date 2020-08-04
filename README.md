@@ -9,7 +9,7 @@ Here at Vanillaville we take pride with our first and only casino. The _grand_ o
 
 Anywho, lets not wallow on the delayed Grand Opening and see on what is happening now. With the help of four skilled but unnamed coders,  Casino_Vanilla will be able to open up their doors in a virtual manner! 
 ##### Yes! You heard that right! 
-The first ever casino in Vanillaville will be a fancy -Virtual Casino_. Look out Silicone Valley, we are coming after you! 
+The first ever casino in Vanillaville will be a fancy _Virtual Casino_. Look out Silicone Valley, we are coming after you! 
 
 ## Why?
 
