@@ -1,27 +1,78 @@
+
+Globals
+
+first shuffle (function)
+than deck [array] // ok
+we create totalCardValue (function)
+create check (function)
+create compare (function)
+create end game (function) 
+restart game (function)
+player display (function)
+output display (function)
+
 Steps
-    1. Create the repository (ok)
     2. Study the request (What & Why?)
        2.1 Ask the player if they want to start a game
-       2.2 if “yes” start game with 2 cards for the player and computer
-        2.2.1 If click on 'draw a card', give one extra card and check
-        2.2.2 If click on 'stand' end players turn. -> player-display (div id) 'it's the computers turn' 
+        2.1.1 output (div id) "welcome lucky peasant, start the game if you want te be king"
+       2.2 if (onclick button) "start the game" -> deck function shuffle start game with 2 cards for the player and two cards for the computer
+        2.2.1 deck function (with shuffle function to randomize cards)
+        2.2.2 give two cards to player + computer 
+        2.2.3 check the values 
+        2.2.4 print the values on -> player-display (div id) "your hand is ${totalcardvalue}"
+        2.2.5 If click on 'draw a card', give one extra card to the player and check (check function)
+        2.2.0 update player-display (div) "your hand has changed to ${totalcardvalue}"
+        2.2.6 If click on 'stand' we end players turn. -> player-display (div id) "it's the computers turn" 
        2.3 check (function) the values for the player
-	      2.3.1 if Value <  21, player-display (div id) “please draw a card or stand?”
-	      2.3.2 Value = 21 output (div id) 'you won' + end game + restart game + player display (div id) 'do you want to play again?'
-	      2.3.3 Value > 21 output (div id) “busted!” + end game + restart game + player display (div id) 'do you want to play again?'
+          2.3.0 totalCardValue (function) -> increment the given values for the cards
+	      2.3.1 if totalCardValue <  21, player-display (div id) “please draw an extra card or stand?”
+	      2.3.2 totalCardValue = 21 end turn + player-display (div id) "i kneel to you, king" output (div id) "congratulations, you are the king"
+	      2.3.3 totalCardValue > 21 end turn + player-display (div id) "You are just a pseudo-king" output (div id) "busted, you went too far"
 	   2.4 Computer starts the game with two cards (we use the check function with different parameters)
-	     2.4.1 if Value <  21, computer continues the game
-	     2.4.2 if value < 21 and/or >= 15 the computer stops all together -> if value is smaller 21 and greater or 
-         equal 
-         21 < value >= 15 the computer stops all together -> if value is smaller 21 and greater or 
-         equal 
-         to 15, the computer stops (= safe area)
-	     2.4.3 Value = 21, output (div id) “computer won” + end game + restart game
-	     2.4.4 Value > 21 output (div id) “computer is busted, you won!” + end game
-       2.5 
+	     2.4.1 if totalCardValue < 21 && value >= 15 the computer ends his turn
+	     2.4.2 if totalCardValue = 21, end turn + player-display (div id) "player kneel to me, i am your king" output (div id) "too bad, you lost"
+	     2.4.3 if totalCardValue > 21 end turn + player-display (div id) "you got lucky, silly king" output (div id) "computer is busted, you are king"
+         2.4.4 if totalCardValue < 15 computer gets another card (above 2 already there)
+         2.4.4.1 Let's loop! pick up cards with forEach() -> check the added cards and keep on checking!  
+       2.5 Compare function
+         2.5.1 if player's value is <= 21 && players value > computers value -> output (div id) "All hail the king, you are rich now" + end game + restart game + player display (div id) ""
+         2.5.2 if players's value  is <= 21 && players value < computers value && computers value <= 21 output (div id) "the peasant remains valueless" + end game + restart game + player display (div id) "you are not king, never were"
+
+
+  *** lisa text
+
+  1 Random order of the cards
+  
+  2 Ask the user for a card (and print it in console.log).
+    yes -> give card, print the value
+    no  -> computers turn
+
+  3 computer gets card (random)
+    if <= 15 -> card
+    else -> stop
+
+  4 compare values
+    if player > computer -> players wins
+    if player < computer -> computer wins
+  user  card? yes -> give card, print the value
+    if total = 21 : you wins
+    if total > 21 : busted
+    if total < 21 : print result
+  
+  computer gets cards
+    if total < 15 : give card
+    if total <21 : print value
+    if total = 21: computer wins
+    if total > 21: busted
+
+
     3. Identify technical challenges (How?)
+
+    see file own_script.js
+
     4. Identify design challenges (How?)
     5. Plan the work, divide it in macro tasks (don't forget a little design), and each macro task 
     in sub-tasks
     6. Divide the tasks in the group and between the pairs, and start coding!
+
 
