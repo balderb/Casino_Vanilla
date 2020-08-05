@@ -18,10 +18,10 @@ It has been the dream of a young enterprise since the beggining of its short lif
 ## How?
 
 The four skilled coders will have to defeat the difficult task of designing something a website that is easy for everyone to understand, from sweet old _oma_ with arthritis, :older_woman: :phone: to short-attention-span, tik-tok generation _youngsters_ :baby: :iphone: <br>
-Will they apply good and consistent design throughout all the website? :see_no_evil: <br>
-Will they bring more than two games to the website? :hear_no_evil:<br>
-Will they add some wacky new features we have not seen before? :speak_no_evil: <br>
-Stay tuned for further development! :computer:
+Will they apply good and consistent design throughout all the website? <br>
+Will they bring more than two games to the website? <br>
+Will they add some wacky new features we have not seen before? <br>
+Stay tuned for further development!
 
 ## Who? :bomb:
 
