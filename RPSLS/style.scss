@@ -2,10 +2,10 @@
 @import "../assets/assets";
 
 
-body{
-  background-color: $darkGrey;
-  margin-left: 35px;
-  margin-right: 35px;
+body {
+    background-color: $darkGrey;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .center {
@@ -15,66 +15,77 @@ body{
     width: 700px;
     padding-top: 70px;
     padding-bottom: 30px;
-  }
+}
 
-.vs{
-    
+.vs {
     padding-top: 150px;
     padding-left: 300px;
     padding-right: 250px;
 }
-.player-one{
- align-items: center;
+
+.player-one {
+    align-items: center;
 }
-.player-one img{
-width: 225px;
-height: 225px;
-}
-.player-two img{
+
+.player-one img {
     width: 225px;
     height: 225px;
-    }
-.vs p{
-    color: $lightGrey ;
+}
+
+.player-two img {
+    width: 225px;
+    height: 225px;
+}
+
+.vs p {
+    color: $lightGrey;
     font-size: 60px;
     padding-left: 60px;
 }
-.b-r{
+
+.b-r {
     margin-left: 300px;
     margin-right: 20px;
 }
-.b-p{
+
+.b-p {
     margin-right: 15px;
 }
-.b-l{
+
+.b-l {
     margin-left: 335px;
     margin-right: 17px;
 }
-.buttons-user input{
+
+.buttons-user input {
     width: 60px;
     height: 60px;
 
 }
-.button-computer{
+
+.button-computer {
     width: 70px;
     height: 70px;
     margin-left: 130px;
 }
-.button-reset{
+
+.button-reset {
     margin-left: 123px;
-     margin-top:15px ;
+    margin-top: 15px;
 }
-.button-reset input{
-    background-color:$darkGrey;
-    color:$lightGrey;
-    border-color:$lightGrey;
+
+.button-reset input {
+    background-color: $darkGrey;
+    color: $lightGrey;
+    border-color: $lightGrey;
     border: solid 1px;
     width: 100px;
     font-family: 'Raleway', sans-serif;
     font-style: italic;
 }
-.result{
-    border-style: solid ;
+
+.result {
+    border-style: solid;
     border-color: $yellow;
     width: 500px;
     margin-left: 490px;
@@ -82,40 +93,57 @@ height: 225px;
     height: 220px;
     margin-bottom: 50px;
 }
-.result p{
-  color: $lightGrey;
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Raleway', sans-serif;
-  color: $lightGrey;
-  font-style: italic;
-  font-weight: 100;
+
+.result p {
+    color: $lightGrey;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: $lightGrey;
+    font-style: italic;
+    font-weight: 100;
 }
-.result p span{
+
+.result p span {
     font-size: 40px;
-    color:$yellow;
+    color: $yellow;
     font-family: 'Parisienne', cursive;
 }
 
-.section-two{
-    color: $lightGrey;
-    font-size: 25px;
-    a{
-        color: $lightGrey;
-        text-decoration: none;
-        padding-left: 80px;
-        font-size: 20px;
-        font-family: 'Raleway', sans-serif;
-    }
-}
-.score{
+.score {
     background-color: $lightGrey;
     height: 200px;
-   .white{
-       padding-left: 50px;
-       text-align: center;
-       font-family: 'Raleway', sans-serif;
-       font-size: 20px;
-       color: $darkGrey;
-   }
+
+    .white {
+        padding-left: 50px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        color: $darkGrey;
+    }
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-size: 24px;
+        padding-bottom: 16px;
+    }
+
+    a {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        color: $lightGrey;
+        padding-left: 60px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: $yellow;
+    }
 }

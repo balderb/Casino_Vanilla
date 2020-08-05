@@ -246,19 +246,6 @@ body {
   font-family: 'Parisienne', cursive;
 }
 
-.section-two {
-  color: #E6E6E6;
-  font-size: 25px;
-}
-
-.section-two a {
-  color: #E6E6E6;
-  text-decoration: none;
-  padding-left: 80px;
-  font-size: 20px;
-  font-family: 'Raleway', sans-serif;
-}
-
 .score {
   background-color: #E6E6E6;
   height: 200px;
@@ -270,5 +257,30 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: #202020;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.footer p {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+.footer a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #E6E6E6;
+  padding-left: 60px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #F0EC7B;
 }
 /*# sourceMappingURL=style.css.map */
