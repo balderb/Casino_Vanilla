@@ -25,11 +25,11 @@ Stay tuned for further development! :computer:
 
 ## Who? :bomb:
 
-Top recent news! :mega: A hacker :cop: found out the names of the skilled coders :busts_in_silhouette: that where brave enought to tackle such an incredible task! Their names are
-*Lisa Baetsle
-*Karolina Dys
-*Balder Bongaerts
-*Alejandro Jose Perdomo Cuello Polania Noguera (that last one sure is a mouthfull! :trollface:)
+Top recent news! :mega: A hacker :cop: found out the names of the skilled coders :busts_in_silhouette: that where brave enought to tackle such an incredible task! Their names are: <br>
+Lisa Baetsle <br>
+Karolina Dys <br>
+Balder Bongaerts <br>
+Alejandro Jose Perdomo Cuello Polania Noguera (that last one sure is a mouthfull! :trollface:) <br>
 And we have found out the webpage that they are working at! :muscle: <br>
 Take a closer look!! :astonished: <br>
 [Casino_Vanilla](https://balderb.github.io/Casino_Vanilla/index.html). 
