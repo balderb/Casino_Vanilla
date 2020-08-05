@@ -4,28 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>casino-royale</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
     <h1>Twenty One</h1>
-
-    <h2>Player</h2>
-    <div id="player-one">
-        <div id="hand"></div>
-        <div id="displayPlayer"></div>
+    <div id="buttons">
         <button id="start">Start Game</button>
         <button id="stand">Stand</button>
-        <button id="draw">Draw</button>
+        <button id="draw">Hit me</button>
+        <button id="reloadpage">restart</button>
+    </div>
+    <div class="wrapper">
+        <div id="thisisplayer1">
+            <h2 id="playerTitle">Player</h2>
+            <div id="player">
+                <div id="display1Player">
+                    <ul>
+                        <li id="myListPlayer"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="thisiscomputer">
+            <h2 id="computerTitle">Computer</h2>
+            <div id="dealer">
+                <div id="displayDealer">
+                    <ul>
+                        <li id="myListDealer"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h2 id="messageTitle">Message</h2>
+            <div id="output"></div>
+        <footer id="footer"></footer>
     </div>
 
-    <h2>Computer</h2>
-    <div id="dealer">
-        <div id="computerHand"></div>
-        <div id="displayDealer"></div>
-    </div>
-
-    <div id="output"></div>
-    <footer id="footer"></footer>
-    <script src = blackjack.js></script>
+    <script src=blackjack.js></script>
 </body>
+
 </html>

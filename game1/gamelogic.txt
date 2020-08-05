@@ -48,7 +48,7 @@ Steps
     no  -> computers turn
 
   3 computer gets card (random)
-    if < 15 -> card
+    if <= 15 -> card
     else -> stop
 
   4 compare values
@@ -74,4 +74,5 @@ Steps
     5. Plan the work, divide it in macro tasks (don't forget a little design), and each macro task 
     in sub-tasks
     6. Divide the tasks in the group and between the pairs, and start coding!
+
 

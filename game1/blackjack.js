@@ -1,4 +1,4 @@
-const suits = ["spades", "diamonds", "clubs", "hearts"]; 
+const suits = ["Spades", "Diamonds", "Clubs", "Hearts"]; 
 const values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 let deck = new Array ();
 
@@ -27,7 +27,7 @@ function createDeck() {                                     // here we are going
 
 function scramble()
 {
-    for (let s = 0; s < 52; s++)
+    for (let s = 0; s < 8000; s++)
     {
         let location1 = Math.floor((Math.random() * deck.length));
         let location2 = Math.floor((Math.random() * deck.length));
@@ -39,20 +39,93 @@ function scramble()
 
 // from here it will be the "user interface" section
 
+function TextAction (a, b) {
+    let result;
+    if (b >= 15)
+        result = "The computer got busted! You just won the Game! <br> Congratulations!";
+    else if (a < 21) {
+        result = "You have the possibility to continue! </br> So please draw a card (hit me) towards the winning hand or stand your ground against the machine!";
+    } else {
+        result = "You are busted. The computer just won the game!";
+    }
+    return result;
+}
+
 document.getElementById('start').addEventListener('click', () => { 
     createDeck();
     scramble();
     let playerCards = [];
-        playerCards = [deck.pop(), deck.pop()];
-        console.log(playerCards);        
-         document.getElementById("displayPlayer").innerHTML = playerCards.map(x => x.Value);
+        playerCards = [deck.pop(), deck.pop(), deck.pop(), deck.pop()];
+        console.log(playerCards);       
+    let totalVPlayer = (playerCards[0].Points) + (playerCards[1].Points);
+    let totalVComputer = (playerCards[2].Points) + (playerCards[3].Points);
+    let ActionToTake = TextAction(totalVPlayer, totalVComputer);
+    let outp1p = `${playerCards[0].Value} of ${playerCards[0].Suits}`
+    let outp2p = `${playerCards[1].Value} of ${playerCards[1].Suits}`
+    let outp1c = `${playerCards[2].Value} of ${playerCards[2].Suits}`
+    let outp2c = `${playerCards[3].Value} of ${playerCards[3].Suits}`
+
+    let nodePlayer = document.createElement("LI");
+    let textNode = document.createTextNode(outp1p);
+    let textNode2 = document.createTextNode(outp2p);
+    let textNode3 = document.createTextNode(outp1c);
+    let textNode4 = document.createTextNode(outp2c);
+    //let textNode = document.createTextNode(`${playerCards[2].Value} of ${playerCards[2].Suits} ${playerCards[3].Value} of ${playerCards[3].Suits}`);
+    nodePlayer.appendChild(textNode);
+    nodePlayer.appendChild(textNode2);
+    nodePlayer.appendChild(textNode3);
+    nodePlayer.appendChild(textNode4);
+    document.getElementById("myListPlayer").appendChild(textNode);
+    document.getElementById("myListPlayer").appendChild(textNode2);
+    document.getElementById("myListDealer").appendChild(textNode3);
+    document.getElementById("myListDealer").appendChild(textNode4);
+        //document.getElementById("myListPlayer").innerHTML = `${playerCards[0].Value} of ${playerCards[0].Suits}<br>
+        //${playerCards[1].Value} of ${playerCards[1].Suits}`;
+        //document.getElementById("displayDealer").innerHTML = `${playerCards[2].Value} of ${playerCards[2].Suits} <br> 
+        //${playerCards[3].Value} of ${playerCards[3].Suits}`;
+    document.getElementById("output").innerHTML = `Your hand is ${totalVPlayer} <br>
+    The computers' hand is ${totalVComputer} <br>
+    ${ActionToTake}`;
 });
 
-// I think what we need to do is take the playerCards array and loop through it with ForEach and create a new array. 
-
 document.getElementById("draw").addEventListener('click', () => {
+    let playerCard = [];
+    playerCard.push(deck.pop());
+    console.log(playerCard);
+    // document.getElementById("displayPlayer").innerHTML = `${playerCards[0].Value} of ${playerCards[0].Suits}`;
+    let totalVPlayer = (playerCard[0].Points);
+    
+    let outp1p = `${playerCard[0].Value} of ${playerCard[0].Suits}`
+    let nodePlayer = document.createElement("LI");
+    let textNode = document.createTextNode(outp1p);
+    nodePlayer.appendChild(textNode);
+    document.getElementById("myListPlayer").appendChild(textNode);
+});
+
+document.getElementById("stand").addEventListener('click', () => {
     let playerCards = [];
     playerCards.push(deck.pop());
     console.log(playerCards);
-})
+    // document.getElementById("displayPlayer").innerHTML = `${playerCards[0].Value} of ${playerCards[0].Suits}`;
+    let outp1p = `${playerCards[0].Value} of ${playerCards[0].Suits}`
+    let nodePlayer = document.createElement("LI");
+    let textNode = document.createTextNode(outp1p);
+    nodePlayer.appendChild(textNode);
+    document.getElementById("myListDealer").appendChild(textNode);
+});
+
+document.getElementById("reloadpage").addEventListener('click', () => {
+    location.reload(true);
+    document.getElementById("output").innerHTML = `Welcome to Vanilla Casino Blackjack<br>
+    Please get as close to 21 as possible!`
+});
+
+
+
+
+
+
+
+
+
 
