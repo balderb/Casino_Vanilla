@@ -1,3 +1,5 @@
+(function() {
+
 const suits = ["Spades", "Diamonds", "Clubs", "Hearts"]; 
 const values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 let deck = new Array ();
@@ -51,11 +53,14 @@ function TextAction (a, b) {
     return result;
 }
 
+
+
 document.getElementById('start').addEventListener('click', () => { 
     createDeck();
     scramble();
     let playerCards = [];
-        playerCards = [deck.pop(), deck.pop(), deck.pop(), deck.pop()];
+        playerCards = [deck.pop(), deck.pop()]
+        comPuterCards = [deck.pop(), deck.pop()];
         console.log(playerCards);       
     let totalVPlayer = (playerCards[0].Points) + (playerCards[1].Points);
     let totalVComputer = (playerCards[2].Points) + (playerCards[3].Points);
@@ -92,9 +97,7 @@ document.getElementById("draw").addEventListener('click', () => {
     let playerCard = [];
     playerCard.push(deck.pop());
     console.log(playerCard);
-    // document.getElementById("displayPlayer").innerHTML = `${playerCards[0].Value} of ${playerCards[0].Suits}`;
     let totalVPlayer = (playerCard[0].Points);
-    
     let outp1p = `${playerCard[0].Value} of ${playerCard[0].Suits}`
     let nodePlayer = document.createElement("LI");
     let textNode = document.createTextNode(outp1p);
@@ -120,12 +123,4 @@ document.getElementById("reloadpage").addEventListener('click', () => {
     Please get as close to 21 as possible!`
 });
 
-
-
-
-
-
-
-
-
-
+})(); 
