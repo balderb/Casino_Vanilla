@@ -1,4 +1,4 @@
-# Casino_Vanilla :slot-machine:
+# Casino_Vanilla :slot_machine:
 
 Welcome to the one and only casino in Vanillaville, the only town where the collective favorite ice-cream flavour is _"Pineapple"_ :pineapple:
 
