@@ -15,7 +15,7 @@ function flipCard() {
     //first click
     hasFlippedCard = true;
     firstCard = this;
-
+ 
     return;
   }
 

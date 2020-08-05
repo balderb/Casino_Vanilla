@@ -1,14 +1,26 @@
+@import assets; 
+@import grid; 
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  display: flex;
+body{
+  background-color: $darkGrey;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
+header {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+ 
 .memory-game {
   width: 640px;
   height: 640px;
@@ -16,6 +28,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
+  background-color: #202020;
 }
 
 .memory-card {
