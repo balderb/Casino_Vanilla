@@ -1,0 +1,141 @@
+// import fonts (better in html page)
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import "grid.scss";
+
+// main colors
+$yellow: #F0EC7B;
+$lightGrey: #E6E6E6;
+$darkGrey: #202020;
+
+// shadow effect // not really sure if the shadow is beautiful, you can adapt
+
+
+
+body{
+  background-color: $darkGrey;
+}
+
+h1 {color: $lightGrey ;
+    font-size: 70px;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 260px;
+    padding-top: 50px;
+    padding-bottom: -20px;
+    margin-bottom: -20px;
+}
+h2{
+    color: $yellow;
+    font-family: 'Parisienne', cursive;
+    font-size: 100px;
+    float:right;
+    padding-top: -40px;
+    margin-top: -40px;
+    padding-right: 430px;
+    font-weight: 200;
+    padding-bottom:0 ;
+    margin-bottom: 0;
+}
+.vs{
+    
+    padding-top: 150px;
+    padding-left: 300px;
+    padding-right: 250px;
+}
+.player-one{
+ align-items: center;
+}
+.player-one img{
+width: 225px;
+height: 225px;
+}
+.player-two img{
+    width: 225px;
+    height: 225px;
+    }
+.vs p{
+    color: $lightGrey ;
+    font-size: 60px;
+    padding-left: 60px;
+}
+.b-r{
+    margin-left: 300px;
+    margin-right: 20px;
+}
+.b-p{
+    margin-right: 15px;
+}
+.b-l{
+    margin-left: 335px;
+    margin-right: 17px;
+}
+.buttons-user input{
+    width: 60px;
+    height: 60px;
+
+}
+.button-computer{
+    width: 70px;
+    height: 70px;
+    margin-left: 130px;
+}
+.button-reset{
+    margin-left: 123px;
+     margin-top:15px ;
+}
+.button-reset input{
+    background-color:$darkGrey;
+    color:$lightGrey;
+    border-color:$lightGrey;
+    border: solid 1px;
+    width: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+.result{
+    border-style: solid ;
+    border-color: $yellow;
+    width: 500px;
+    margin-left: 490px;
+    margin-top: 40px;
+    height: 220px;
+    margin-bottom: 50px;
+}
+.result p{
+  color: $lightGrey;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  color: $lightGrey;
+  font-style: italic;
+  font-weight: 100;
+}
+.result p span{
+    font-size: 40px;
+    color:$yellow;
+    font-family: 'Parisienne', cursive;
+}
+
+.section-two{
+    color: $lightGrey;
+    font-size: 25px;
+    a{
+        color: $lightGrey;
+        text-decoration: none;
+        padding-left: 80px;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+.score{
+    background-color: $lightGrey;
+    height: 200px;
+   .white{
+       padding-left: 50px;
+       text-align: center;
+       font-family: 'Raleway', sans-serif;
+       font-size: 20px;
+       color: $darkGrey;
+   }
+}

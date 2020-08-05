@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../home.css" />
+    <title>PRSLS</title>
+  </head>
+  <body>
+    <div class="game">
+      <h1>ROCK, PAPER, SCISSORS, LIZARD, SPOCK</h1>
+      <h2>The game</h2>
+      <div class="vs">
+        <div class="player-one column col-m-4">
+          <img
+            class="img"
+            id="src-player"
+            src="img/rock.svg"
+            alt="Paper"
+            width="200"
+            height="200"
+          />
+        </div>
+        <p class="column col-m-4">VS</p>
+        <div class="player-two column col-m-4">
+          <img
+            class="img"
+            id="src-computer"
+            src="img/rock.svg"
+            alt="Rock"
+            width="200"
+            height="200"
+          />
+        </div>
+      </div>
+      <div class="buttons-user column col-m-6">
+        <input
+          class="b-r"
+          type="image"
+          id="button-rock"
+          value="rock"
+          src="img/rock.svg"
+          alt="Rock"
+        />
+        <input
+          class="b-p"
+          type="image"
+          id="button-paper"
+          value="paper"
+          src="img/paper.svg"
+          alt="Paper"
+        />
+        <input
+          class="b-s"
+          type="image"
+          id="button-scissors"
+          value="scissors"
+          src="img/scissors.svg"
+          alt="Scissors"
+        />
+        <input
+          class="b-l"
+          type="image"
+          id="button-lizard"
+          value="lizard"
+          src="img/lizard.svg"
+          alt="Lizard"
+        />
+        <input
+          type="image"
+          id="button-spock"
+          value="spock"
+          src="img/spock.svg"
+          alt="Rock"
+        />
+      </div>
+      <div class="buttons-comuter column col-m-6">
+        <div class="button-computer">
+          <input
+            type="image"
+            id="computer"
+            src="img/computer.svg"
+            class="button button-computer"
+            value="computer"
+          />
+        </div>
+        <div class="button-reset">
+          <input
+            type="button"
+            id="reset"
+            class="button button-reset"
+            value="RESET"
+          />
+        </div>
+      </div>
+      <div class="result column col-m-12">
+        <p id="target">Result</p>
+      </div>
+    </div>
+      <div class="score column col-m-12">
+        <div class="white column col-m-4" id="games-played">Game played</div>
+        <div class="white column col-m-4" id="wins">Wins!</div>
+        <div class="white column col-m-4" id="total-score">Total Score</div>
+      </div>
+    <div class="section-two">
+      <div class="footer column col-m-12">
+        <p class="column col-m-12">GO TO</p>
+        <a class="column col-m-2" href="">Home</a>
+        <a class="column col-m-2" href="">RPSLS</a>
+        <a class="column col-m-2" href="">Blackjack</a>
+        <a class="column col-m-2" href="">Memory</a>
+        <a class="column col-m-2"href="">Moving blocks</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
