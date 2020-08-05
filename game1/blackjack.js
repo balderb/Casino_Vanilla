@@ -53,22 +53,20 @@ function TextAction (a, b) {
     return result;
 }
 
-
-
 document.getElementById('start').addEventListener('click', () => { 
     createDeck();
     scramble();
     let playerCards = [];
         playerCards = [deck.pop(), deck.pop()]
-        comPuterCards = [deck.pop(), deck.pop()];
-        console.log(playerCards);       
+        computerCards = [deck.pop(), deck.pop()];
+        console.log(playerCards, computerCards);     
     let totalVPlayer = (playerCards[0].Points) + (playerCards[1].Points);
-    let totalVComputer = (playerCards[2].Points) + (playerCards[3].Points);
+    let totalVComputer = (computerCards[0].Points) + (computerCards[1].Points);
     let ActionToTake = TextAction(totalVPlayer, totalVComputer);
     let outp1p = `${playerCards[0].Value} of ${playerCards[0].Suits}`
     let outp2p = `${playerCards[1].Value} of ${playerCards[1].Suits}`
-    let outp1c = `${playerCards[2].Value} of ${playerCards[2].Suits}`
-    let outp2c = `${playerCards[3].Value} of ${playerCards[3].Suits}`
+    let outp1c = `${computerCards[0].Value} of ${computerCards[0].Suits}`
+    let outp2c = `${computerCards[1].Value} of ${computerCards[1].Suits}`
 
     let nodePlayer = document.createElement("LI");
     let textNode = document.createTextNode(outp1p);
