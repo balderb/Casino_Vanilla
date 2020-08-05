@@ -327,3 +327,7 @@ function game() {
   buttons();
 }
 game();
+
+document.getElementById('reset').addEventListener('click', function(event) {
+  window.location.reload();
+})
