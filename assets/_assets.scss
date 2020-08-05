@@ -1,0 +1,31 @@
+// import fonts (better in html page)
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+// main colors
+$yellow: #F0EC7B;
+$lightGrey: #E6E6E6;
+$darkGrey: #202020;
+
+// shadow effect // not really sure if the shadow is beautiful, you can adapt
+@mixin shadow {
+  box-shadow: 0px 6px 6px #000000;
+};
+
+// font style for the game names on homepage
+@mixin game-names {
+  font-family: 'Raleway', sans-serif;
+  color: $lightGrey;
+  font-size: 50px;
+  font-style: italic;
+};
+
+// style for the buttons
+@mixin button {
+  font-family: 'Raleway', sans-serif;
+  background-color: $darkGrey;
+  border: 2px solid $yellow;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: $lightGrey;
+};
+
