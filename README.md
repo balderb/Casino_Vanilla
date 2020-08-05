@@ -30,6 +30,6 @@ Lisa Baetsle <br>
 Karolina Dys <br>
 Balder Bongaerts <br>
 Alejandro Jose Perdomo Cuello Polania Noguera (that last one sure is a mouthfull!) <br>
-And we have found out the webpage that they are working at! :muscle: <br>
+The police was also able to locate the webpage that is being built for Casino_Vanilla! <br>
 Take a closer look!! :astonished: <br>
 [Casino_Vanilla](https://balderb.github.io/Casino_Vanilla/index.html). 
