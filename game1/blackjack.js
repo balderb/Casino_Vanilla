@@ -17,7 +17,6 @@ function createDeck() {                                     // here we are going
                 if (values[v] === "A")
                 points = 11;
             
-                
             let card = {                                    // here we basically create an object and put the values for the card inside it by using properties
                 Value: values[v],                           // I wonder if we can also put a method inside here where we can also flip the card, or should we place that somewhere else?
                 Suits: suits[s],
@@ -45,8 +44,8 @@ function scramble()
 function TextAction (a, b) {
     let result;
     if (b >= 15)
-        result = "The computer got busted! You just won the Game! <br> Congratulations!";
-    else if (a < 21) {
+        result = "The computer stops! You can draw a card!";
+    else if (a <= 21) {
         result = "You have the possibility to continue! </br> So please draw a card (hit me) towards the winning hand or stand your ground against the machine!";
     } else {
         result = "You are busted. The computer just won the game!";
@@ -60,7 +59,7 @@ document.getElementById('start').addEventListener('click', () => {
     let playerCards = [];
         playerCards = [deck.pop(), deck.pop()]
         computerCards = [deck.pop(), deck.pop()];
-        console.log(playerCards, computerCards);     
+        // console.log(playerCards, computerCards);     
     let totalVPlayer = (playerCards[0].Points) + (playerCards[1].Points);
     let totalVComputer = (computerCards[0].Points) + (computerCards[1].Points);
     let ActionToTake = TextAction(totalVPlayer, totalVComputer);
@@ -102,6 +101,7 @@ document.getElementById("draw").addEventListener('click', () => {
     let textNode = document.createTextNode(outp1p);
     nodePlayer.appendChild(textNode);
     document.getElementById("myListPlayer").appendChild(textNode);
+
 });
 
 document.getElementById("stand").addEventListener('click', () => {
