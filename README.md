@@ -23,7 +23,7 @@ Will they bring more than two games to the website? <br>
 Will they add some wacky new features we have not seen before? <br>
 Stay tuned for further development!
 
-## Who? :bomb:
+## Who?
 
 Top recent news! The police was able to find the names of the skilled coders :busts_in_silhouette: that where brave enought to tackle such an incredible task! Their names are: <br>
 Lisa Baetsle <br>
