@@ -128,8 +128,8 @@
       document.getElementById("cardCOne").style.visibility = "visible";
       document.getElementById("cardCTwo").style.visibility = "visible";
       // Change the source of the images so they match the cards values and suits
-      document.getElementById('cardCOne').src = `img/${computerCards[0].Value}-${computerCards[0].Suits}.png`
-      document.getElementById('cardCTwo').src = `img/${computerCards[1].Value}-${computerCards[1].Suits}.png`
+      document.getElementById('cardCOne').src = `../assets/${computerCards[0].Value}-${computerCards[0].Suits}.png`
+      document.getElementById('cardCTwo').src = `../assets/${computerCards[1].Value}-${computerCards[1].Suits}.png`
   });
 
 
@@ -158,22 +158,22 @@
       // If the player has 3 cards, change the visibility of the 3th image in the html and change the source
       if (playerCards.length == 3) {
           document.getElementById("cardPThree").style.visibility = "visible";
-          document.getElementById('cardPThree').src = `img/${playerCards[2].Value}-${playerCards[2].Suits}.png`
+          document.getElementById('cardPThree').src = `../assets/${playerCards[2].Value}-${playerCards[2].Suits}.png`
       }
       // If the player has 4 cards, change the visibility of the 4th image in the html and change the source
       if (playerCards.length == 4) {
           document.getElementById('cardPFour').style.visibility = "visible";
-          document.getElementById('cardPFour').src = `img/${playerCards[3].Value}-${playerCards[3].Suits}.png`
+          document.getElementById('cardPFour').src = `../assets/${playerCards[3].Value}-${playerCards[3].Suits}.png`
       }
       // If the player has 5 cards, change the visibility of the 5th image in the html and change the source
       if (playerCards.length == 5) {
           document.getElementById("cardPFive").style.visibility = "visible";
-          document.getElementById('cardPFive').src = `img/${playerCards[4].Value}-${playerCards[4].Suits}.png`
+          document.getElementById('cardPFive').src = `../assets/${playerCards[4].Value}-${playerCards[4].Suits}.png`
       }
       // If the player has 6 cards, change the visibility of the 6th image in the html and change the source
       if (playerCards.length == 6) {
           document.getElementById('cardPSix').style.visibility = "visible";
-          document.getElementById('cardPSix').src = `img/${playerCards[5].Value}-${playerCards[5].Suits}.png`
+          document.getElementById('cardPSix').src = `../assets/${playerCards[5].Value}-${playerCards[5].Suits}.png`
       }
 
   });
@@ -205,22 +205,22 @@
       // If the computer has 3 cards, change the visibility of the 3th image in the html and change the source
       if (computerCards.length == 3) {
           document.getElementById("cardCThree").style.visibility = "visible";
-          document.getElementById('cardCThree').src = `img/${computerCards[2].Value}-${computerCards[2].Suits}.png`
+          document.getElementById('cardCThree').src = `../assets/${computerCards[2].Value}-${computerCards[2].Suits}.png`
       }
       // If the computer has 4 cards, change the visibility of the 4th image in the html and change the source
       if (computerCards.length == 4) {
           document.getElementById('cardCFour').style.visibility = "visible";
-          document.getElementById('cardCFour').src = `img/${computerCards[3].Value}-${computerCards[3].Suits}.png`
+          document.getElementById('cardCFour').src = `../assets/${computerCards[3].Value}-${computerCards[3].Suits}.png`
       }
       // If the computer has 5 cards, change the visibility of the 5th image in the html and change the source
       if (computerCards.length == 5) {
           document.getElementById("cardCFive").style.visibility = "visible";
-          document.getElementById('cardCFive').src = `img/${computerCards[4].Value}-${computerCards[4].Suits}.png`
+          document.getElementById('cardCFive').src = `../assets/${computerCards[4].Value}-${computerCards[4].Suits}.png`
       }
       // If the computer has 6 cards, change the visibility of the 6th image in the html and change the source
       if (computerCards.length == 6) {
           document.getElementById('cardCSix').style.visibility = "visible";
-          document.getElementById('cardCSix').src = `img/${computerCards[5].Value}-${computerCards[5].Suits}.png`
+          document.getElementById('cardCSix').src = `../assets/${computerCards[5].Value}-${computerCards[5].Suits}.png`
       }
   });
 
