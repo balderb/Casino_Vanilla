@@ -1,124 +1,118 @@
-// make a function that compares the two choices
+/// make a function that compares the two choices
 function game() {
-  let computerScore = 0;
-  let playerScore = 0;
-
-  function compare(choice1, choice2) {
-    if (choice1 == choice2) {
+  function compare(userChoice, computerChoice) {
+    if (userChoice == computerChoice) {
       return `<span>Tie</span><br>it's a tie!`;
-    } else if (choice1 == "rock") {
-      if (choice2 == "scissors") {
-        playerScore++;
-        // document.getElementById("player-score").innerHTML = playerScore;
-        //document.getElementById("computer-score").innerHTML = computerScore;
+    } else if (userChoice == "rock") {
+    if (computerChoice == "scissors") {
+      playerScore++;
         return `<span>Congratulations</span><br>rock crushes scissors <br> You Win!`;
-      } else if (choice2 == "paper") {
+      } else if (computerChoice == "paper") {
         computerScore++;
-        //document.getElementById("computer-score").innerHTML = computerScore;
-        //document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span><br>paper covers rock <br> You Lose';
-      } else if (choice2 === "lizard") {
+      } else if (computerChoice == "lizard") {
         playerScore++;
-        //document.getElementById("player-score").innerHTML = playerScore;
-        //document.getElementById("computer-score").innerHTML = computerScore;
         return `<span>Congratulations</span><br>rock crushes lizard <br> You Win!`;
-      } else if (choice2 == "spock") {
+      } else if (computerChoice == "spock") {
         computerScore++;
-        // document.getElementById("computer-score").innerHTML = computerScore;
-        //document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span><br> spock vaporizes rock <br> You Lose';
       }
-    } else if (choice1 == "paper") {
-      if (choice2 == "scissors") {
+    } else if (userChoice == "paper") {
+      if (computerChoice == "scissors") {
         computerScore++;
-        // document.getElementById("computer-score").innerHTML = computerScore;
-        // document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span><br> scissors cut paper <br> You Lose';
-      } else if (choice2 == "rock") {
+      } else if (computerChoice == "rock") {
         playerScore++;
-        // document.getElementById("player-score").innerHTML = playerScore;
-        // document.getElementById("computer-score").innerHTML = computerScore;
         return `<span>Congratulations</span><br>paper covers rock <br> You Win!`;
-      } else if (choice2 == "lizard") {
+      } else if (computerChoice == "lizard") {
         computerScore++;
-        //   document.getElementById("computer-score").innerHTML = computerScore;
-        // document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span><br> lizard eats paper <br> You Lose';
-      } else if (choice2 == "spock") {
+      } else if (computerChoice == "spock") {
         playerScore++;
-        //  document.getElementById("player-score").innerHTML = playerScore;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
         return `<span>Congratulations</span><br>paper disproves spock <br> You Win!`;
       }
-    } else if (choice1 == "scissors") {
-      if (choice2 == "paper") {
+    } else if (userChoice == "scissors") {
+      if (computerChoice == "paper") {
         playerScore++;
-        //  document.getElementById("player-score").innerHTML = playerScore;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
         return `<span>Congratulations</span><br>scissors ciut paper <br> You Win!`;
-      } else if (choice2 == "rock") {
+      } else if (computerChoice == "rock") {
         computerScore++;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
-        //  document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span><br> rock crushes scissors <br> You Lose!';
-      } else if (choice2 == "lizard") {
-        computerScore++;
-        //  document.getElementById("player-score").innerHTML = playerScore;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
+      } else if (computerChoice == "lizard") {
+        playerScore++;
         return `<span>Congratulations</span><br>scissors decapitate lizard <br> You Win!`;
-      } else if (choice2 == "spock") {
+      } else if (computerChoice == "spock") {
         computerScore++;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
-        // document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span> <br>spock smashes scissors <br> You Lose';
       }
-    } else if (choice1 == "lizard") {
-      if (choice2 == "scissors") {
+    } else if (userChoice == "lizard") {
+      if (computerChoice == "scissors") {
         computerScore++;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
-        //  document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span><br> scissors decapitate lizard <br> You Lose';
-      } else if (choice2 == "rock") {
+      } else if (computerChoice == "rock") {
         computerScore++;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
-        // document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span><br> rock crushes lizard <br> You Lose';
-      } else if (choice2 == "paper") {
+      } else if (computerChoice == "paper") {
         playerScore++;
-        //  document.getElementById("player-score").innerHTML = playerScore;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
         return `<span>Congratulations</span><br>lizard eats paper <br> You Win!`;
-      } else if (choice2 == "spock") {
+      } else if (computerChoice == "spock") {
         playerScore++;
-        //  document.getElementById("player-score").innerHTML = playerScore;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
         return `<span>Congratulations</span><br>lizard poisons spock <br> You Win!`;
       }
-    } else if (choice1 == "spock") {
-      if (choice2 == "scissors") {
+    } else if (userChoice == "spock") {
+      if (computerChoice == "scissors") {
         playerScore++;
-        //  document.getElementById("player-score").innerHTML = playerScore;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
         return `<span>Congratulations</span><br>spock smashes scissors <br> You Win!`;
-      } else if (choice2 == "rock") {
+      } else if (computerChoice == "rock") {
         playerScore++;
-        //  document.getElementById("player-score").innerHTML = playerScore;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
         return '<span>Congratulations</span><br>spock vaporizes rock <br> You Win!';
-      } else if (choice2 == "lizard") {
+      } else if (computerChoice == "lizard") {
         computerScore++;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
-        // document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span><br> lizard poisons spock <br> You Lose';
-      } else if (choice2 == "paper") {
+      } else if (computerChoice == "paper") {
         computerScore++;
-        //  document.getElementById("computer-score").innerHTML = computerScore;
-        //  document.getElementById("player-score").innerHTML = playerScore;
         return '<span>Sorry</span><br> paper disproves spock <br> You Lose';
       }
     }
   }
-
+  let computerScore = 0;
+  let playerScore = 0;
+  /*function score(userChoice, computerChoice) {
+    if (userChoice == "rock") {
+     if (computerChoice == "scissors"&& computerChoice == "lizard") {
+         playerScore++;
+       } else if (computerChoice == "paper" && computerChoice == "spock") {
+         computerScore++;
+     } else if (userChoice == "paper") {
+       if (computerChoice == "scissors" && computerChoice == "lizard") {
+         computerScore++;
+        }else if  (computerChoice == "rock"&& computerChoice == "spock") {
+         playerScore++;
+     } 
+   }
+     else if (userChoice == "scissors") {
+      if (computerChoice == "paper" && computerChoice == "spock") {
+         playerScore++;
+       } else if (computerChoice == "rock"&& computerChoice == "lizard") {
+         computerScore++; 
+       }
+     }
+     }else if (userChoice == "lizard") {
+       if (computerChoice == "scissors"&& computerChoice == "rock" ) {
+         computerScore++;
+       } else  if(computerChoice == "paper" && computerChoice == "spock") {
+         playerScore++;
+       }
+     }
+     else if (userChoice == "spock") {
+       if (computerChoice == "scissors" && computerChoice == "rock" ) {
+         playerScore++;
+       } else if(computerChoice == "lizard"&& computerChoice == "paper" ) {
+         computerScore++;
+       }
+     }
+   }
+  */
   // the computer picks a random number between 0 and 1 and store it into a variable
   let computerChoice = Math.random();
 
@@ -137,7 +131,8 @@ function game() {
 
   // Now the user has to pick a button
   // the user picks ROCK
-  function buttons() {
+  function buttons(){
+  
     document
       .getElementById("button-rock")
       .addEventListener("click", function (e) {
@@ -169,16 +164,22 @@ function game() {
             } // after the click on the rock button, do something when clicking on the computer button
             document.getElementById(
               "src-computer"
-            ).src = `../assets/${computerChoice}.svg`; // change the source of the image to the value that the computer picked
-            let result = compare(userChoice, computerChoice); // compare the two choices with the function compare ()
+            ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
-            // document.getElementById("computer-score").innerHTML = computerScore;
-            // document.getElementById("player-score").innerHTML = playerScore;
-          });
-      });
+          }); // change the source of the image to the value that the computer picked
+            let result = compare(userChoice, computerChoice); // compare the two choices with the function compare ()
+           
+            document.getElementById("wins").innerHTML =  playerScore;
+            
+            console.log(computerScore)
+           console.log(playerScore)
 
+            
+         
+      });
+  
     // the user picks PAPER
-    document
+   document
       .getElementById("button-paper")
       .addEventListener("click", function (e) {
         let userChoice = "paper";
@@ -207,11 +208,16 @@ function game() {
             document.getElementById(
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
-            let result = compare(userChoice, computerChoice);
             document.getElementById("target").innerHTML = result;
-            // document.getElementById("computer-score").innerHTML = computerScore;
-            //document.getElementById("player-score").innerHTML = playerScore;
           });
+            let result = compare(userChoice, computerChoice);
+            document.getElementById("wins").innerHTML = "Wins<br>"+ playerScore;
+            
+            console.log(computerScore)
+            console.log(playerScore)
+           
+           
+         
       });
 
     // the user picks SCISSORS
@@ -244,13 +250,17 @@ function game() {
             document.getElementById(
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
-            let result = compare(userChoice, computerChoice);
             document.getElementById("target").innerHTML = result;
           });
+          let result = compare(userChoice, computerChoice);
+          document.getElementById("wins").innerHTML =playerScore;
+            console.log(computerScore)
+            console.log(playerScore)
+            
+          
       });
-
     // the user picks LIZARD
-    document
+   document
       .getElementById("button-lizard")
       .addEventListener("click", function (e) {
         let userChoice = "lizard";
@@ -279,15 +289,20 @@ function game() {
             document.getElementById(
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
-            let result = compare(userChoice, computerChoice);
             document.getElementById("target").innerHTML = result;
-            // document.getElementById("computer-score").innerHTML = computerScore;
-            //document.getElementById("player-score").innerHTML = playerScore;
           });
+          let result = compare(userChoice, computerChoice);
+            
+            document.getElementById("wins").innerHTML = playerScore;
+           
+            console.log(computerScore)
+           console.log(playerScore)
+           
+         
       });
 
     // the user picks SPOCK
-    document
+   document
       .getElementById("button-spock")
       .addEventListener("click", function (e) {
         let userChoice = "spock";
@@ -315,16 +330,23 @@ function game() {
                 break;
             }
             document.getElementById("src-player").src = `../assets/${computerChoice}.svg`;
-            let result = compare(userChoice, computerChoice);
             document.getElementById("target").innerHTML = result;
-            //document.getElementById("computer-score").innerHTML = computerScore;
-            //document.getElementById("player-score").innerHTML = playerScore;
           });
+            let result = compare(userChoice, computerChoice);
+            document.getElementById("wins").innerHTML = playerScore;
+            
+           console.log(computerScore)
+           console.log(playerScore)
+           
+            
+          
       });
 
   }
   buttons();
-}
+          }
+
+
 game();
 
 document.getElementById('reset').addEventListener('click', function (event) {
