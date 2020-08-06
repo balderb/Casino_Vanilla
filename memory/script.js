@@ -4,18 +4,20 @@ let hasFlippedCard = false; // The player has not flipped a card yet
 let lockBoard = false; // The board is not locked in the beginning
 let firstCard;
 let secondCard;
-
+let playerscore = 0;
 function flipCard() {
   if (lockBoard) return; // you can play unless this is true (= locked)
   if (this === firstCard) return; //If we click the same card two times, don't execute the function
 
   this.classList.add('flip') //Add a class to each card
-
+ 
   if (!hasFlippedCard) {
     //first click
+    
     hasFlippedCard = true;
     firstCard = this;
- 
+    document.getElementById("wins").innerHTML = playerscore;
+    document.getElementById("total-score").innerHTML = playerscore;
     return;
   }
 
@@ -30,9 +32,14 @@ function flipCard() {
 
 // This is the function to check if there is a match
 function checkIfMatch() {
+  
   if (firstCard.dataset.name === secondCard.dataset.name) {
     // it's a match
+    
     console.log('yeey!');
+    playerscore ++;
+  
+    
     // make sure you can not click again
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
