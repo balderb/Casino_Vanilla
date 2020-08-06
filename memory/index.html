@@ -2,110 +2,206 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Memory</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Memory</title>
-</head>
-
-<body>
-
-  <section class="memory-game">
-
-    <div class="title">
-      <img class="title-memory" src="../assets/title-memory.png" alt="Title for the Memory Card Game">
-    </div>
-
-    <div class="memory-card" data-name="Vanilla">
-      <img class="front-face" src="../assets/memory-back-vanilla@2x.png" alt="Vanilla">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Vanilla">
-      <img class="front-face" src="../assets/memory-back-vanilla@2x.png" alt="Vanilla">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Chocolate">
-      <img class="front-face" src="../assets/memory-back-chocolate@2x.png" alt="Chocolate">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Chocolate">
-      <img class="front-face" src="../assets/memory-back-chocolate@2x.png" alt="Chocolate">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Strawberry">
-      <img class="front-face" src="../assets/memory-back-strawberry@2x.png" alt="Strawberry">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Strawberry">
-      <img class="front-face" src="../assets/memory-back-strawberry@2x.png" alt="Strawberry">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Pistachio">
-      <img class="front-face" src="../assets/memory-back-pistachio@2x.png" alt="Pistachio">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Pistachio">
-      <img class="front-face" src="../assets/memory-back-pistachio@2x.png" alt="Pistachio">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Mint">
-      <img class="front-face" src="../assets/memory-back-mint@2x.png" alt="Mint">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Mint">
-      <img class="front-face" src="../assets/memory-back-mint@2x.png" alt="Mint">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Mango">
-      <img class="front-face" src="../assets/memory-back-mango@2x.png" alt="Mango">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-    <div class="memory-card" data-name="Mango">
-      <img class="front-face" src="../assets/memory-back-mango@2x.png" alt="Mango">
-      <img class="back-face" src="../assets/memory-card-front@2x.png" alt="Memory Card">
-    </div>
-
-  </section>
-
-  <div class="score">
-    <div class="row">
-      <div class="col-m-4" id="games-played">
-        <p class="number"> 0 </p>
-        <p class="text">games played</p>
+  <body>
+    <section class="memory-game">
+      <div class="title">
+        <img
+          class="title-memory"
+          src="../assets/title-memory.png"
+          alt="Title for the Memory Card Game"
+        />
       </div>
-      <div class="col-m-4" id="wins">
-        <p class="number"> 0 </p>
-        <p class="text">games played</p>
+
+      <div class="memory-card" data-name="Vanilla">
+        <img
+          class="front-face"
+          src="../assets/memory-back-vanilla@2x.png"
+          alt="Vanilla"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
       </div>
-      <div class="col-m-4" id="total-score">
-        <p class="number"> 0 </p>
-        <p class="text">games played</p>
+
+      <div class="memory-card" data-name="Vanilla">
+        <img
+          class="front-face"
+          src="../assets/memory-back-vanilla@2x.png"
+          alt="Vanilla"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+      <div class="memory-card" data-name="Chocolate">
+        <img
+          class="front-face"
+          src="../assets/memory-back-chocolate@2x.png"
+          alt="Chocolate"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+      <div class="memory-card" data-name="Chocolate">
+        <img
+          class="front-face"
+          src="../assets/memory-back-chocolate@2x.png"
+          alt="Chocolate"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+      <div class="memory-card" data-name="Strawberry">
+        <img
+          class="front-face"
+          src="../assets/memory-back-strawberry@2x.png"
+          alt="Strawberry"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+      <div class="memory-card" data-name="Strawberry">
+        <img
+          class="front-face"
+          src="../assets/memory-back-strawberry@2x.png"
+          alt="Strawberry"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+      <div class="memory-card" data-name="Pistachio">
+        <img
+          class="front-face"
+          src="../assets/memory-back-pistachio@2x.png"
+          alt="Pistachio"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+      <div class="memory-card" data-name="Pistachio">
+        <img
+          class="front-face"
+          src="../assets/memory-back-pistachio@2x.png"
+          alt="Pistachio"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+      <div class="memory-card" data-name="Mint">
+        <img
+          class="front-face"
+          src="../assets/memory-back-mint@2x.png"
+          alt="Mint"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+      <div class="memory-card" data-name="Mint">
+        <img
+          class="front-face"
+          src="../assets/memory-back-mint@2x.png"
+          alt="Mint"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+<<<<<<< HEAD
+      <div class="memory-card" data-name="Mango">
+        <img
+          class="front-face"
+          src="../assets/memory-back-mango@2x.png"
+          alt="Mango"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+
+      <div class="memory-card" data-name="Mango">
+        <img
+          class="front-face"
+          src="../assets/memory-back-mango@2x.png"
+          alt="Mango"
+        />
+        <img
+          class="back-face"
+          src="../assets/memory-card-front@2x.png"
+          alt="Memory Card"
+        />
+      </div>
+    </section>
+
+    <div class="score">
+      <div class="row">
+        <div class="col-m-4" id="games-played">
+          <p class="number">1</p>
+          <p class="text">games played</p>
+        </div>
+        <div class="col-m-4">
+          <p class="number" id="wins">0</p>
+          <p class="text">Wins</p>
+        </div>
+        <div class="col-m-4">
+          <p class="number" id="total-score">0</p>
+          <p class="text">Total Score</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <p>GO TO</p>
-    <a href="../index.html">Home</a>
-    <a href="../RPSLS/index.html">RPSLS</a>
-    <a href="../blackjack/index2.html">Blackjack</a>
-    <a href="index.html">Memory</a>
-  </div>
+    <div class="footer">
+      <p>GO TO</p>
+      <a href="../index.html">Home</a>
+      <a href="../RPSLS/index.html">RPSLS</a>
+      <a href="../blackjack/index2.html">Blackjack</a>
+      <a href="index.html">Memory</a>
+    </div>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
