@@ -42,6 +42,10 @@ p {
 .btn-play {
   @include button;
   margin-left: 60px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .btn-play:hover {

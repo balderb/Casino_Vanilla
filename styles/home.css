@@ -188,6 +188,10 @@ p {
   margin-left: 60px;
 }
 
+.btn-play a {
+  text-decoration: none;
+}
+
 .btn-play:hover {
   background-color: #F0EC7B;
   color: #202020;
