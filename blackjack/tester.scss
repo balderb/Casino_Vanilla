@@ -1,4 +1,4 @@
-/* adding css from  sas pre-compiler*/
+/* adding css from  sass pre-compiler*/
 
 @import "../assets/assets";
 @import "../assets/grid";
@@ -9,6 +9,12 @@ body {
 
 h2 {
     color: white;
+}
+
+.cardImage {
+  img {
+    visibility: hidden;
+  }
 }
 
 .score {

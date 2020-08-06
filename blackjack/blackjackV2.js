@@ -112,8 +112,8 @@
       document.getElementById("cardPOne").style.visibility = "visible";
       document.getElementById("cardPTwo").style.visibility = "visible";
       // Change the source of the images so they match the cards values and suits
-      document.getElementById('cardPOne').src = `img/${playerCards[0].Value}-${playerCards[0].Suits}.png`
-      document.getElementById('cardPTwo').src = `img/${playerCards[1].Value}-${playerCards[1].Suits}.png`
+      document.getElementById('cardPOne').src = `../assets/${playerCards[0].Value}-${playerCards[0].Suits}.png`
+      document.getElementById('cardPTwo').src = `../assets/${playerCards[1].Value}-${playerCards[1].Suits}.png`
 
       // Computer
       // store the suits and the value of every computer card in the empty string resultPComputer. Use += to not overwrite each time but add to the string.

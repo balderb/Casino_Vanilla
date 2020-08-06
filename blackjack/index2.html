@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casino-royale</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tester.css">
 </head>
 
 <body>
-    <img src="../assets/title-blackjack.png" alt="Blackjack, the game">
+    <div class="header">
+        <img src="../assets/title-blackjack.png" alt="Blackjack, the game">
+    </div>
+
     <div id="buttons">
         <button id="start">Play Game</button>
         <button id="stand">Stand</button>
         <button id="draw">Draw a Card</button>
         <button id="reloadpage">Restart</button>
     </div>
-    <div class="wrapper">
-        <div id="thisisplayer1">
-            <h2 id="playerTitle">Player</h2>
-            <div id="player">
-                <div id="display1Player">
-                    <ul>
-                        <li id="myListPlayer"></li>
-                    </ul>
+
+    <div class="blackjack">
+        <div class="row">
+            <div class="col col-m-7">
+                <h2 id="playerTitle">Player</h2>
+                <div class="cardImage">
+                    <img src="" alt="cardPOne" id="cardPOne">
+                    <img src="" alt="cardPTwo" id="cardPTwo">
+                    <img src="" alt="cardPThree" id="cardPThree">
+                    <img src="" alt="cardPFour" id="cardPFour">
+                    <img src="" alt="cardPFive" id="cardPFive">
+                    <img src="" alt="cardPSix" id="cardPSix">
                 </div>
+                <div id="result"></div>
+            </div>
+            <div class="col-m-5">
+                <h2 id="computerTitle">Computer</h2>
+                <div class="cardImage">
+                    <img src="" alt="cardCOne" id="cardCOne">
+                    <img src="" alt="cardCTwo" id="cardCTwo">
+                    <img src="" alt="cardCThree" id="cardCThree">
+                    <img src="" alt="cardCFour" id="cardCFour">
+                    <img src="" alt="cardCFive" id="cardCFive">
+                    <img src="" alt="cardCSix" id="cardCSix">
+                </div>
+                <div id="resultComputer"></div>
             </div>
         </div>
-        <div id="thisiscomputer">
-            <h2 id="computerTitle">Computer</h2>
-            <div id="dealer">
-                <div id="displayDealer">
-                    <ul>
-                        <li id="myListDealer"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <h2 id="messageTitle">Message</h2>
-            <div id="output"></div>
-        <footer id="footer"></footer>
+        <div id="output"></div>
     </div>
+
     <div class="score">
         <div class="row">
             <div class="col-m-4" id="games-played">
@@ -57,13 +66,16 @@
             </div>
         </div>
     </div>
+
     <div class="footer">
         <p>GO TO</p>
         <a href="index.html">Home</a>
         <a href="../RPSLS/index.html">RPSLS</a>
         <a href="blackjack/index2.html">Blackjack</a>
         <a href="memory/index.html">Memory</a>
-    </div> 
-    <script src=blackjack.js></script>
+    </div>
+
+    <script src=blackjackV2.js></script>
 </body>
+
 </html>
