@@ -25,7 +25,7 @@ Stay tuned for further development!
 
 ## Who?
 
-Top recent news! The police was able to find the names of the skilled coders :busts_in_silhouette: that where brave enought to tackle such an incredible task! Their names are: <br>
+Top recent news! The police was able to find the names of the skilled coders :busts_in_silhouette: that where brave enough to tackle such an incredible task! Their names are: <br>
 Lisa Baetsle <br>
 Karolina Dys <br>
 Balder Bongaerts <br>
