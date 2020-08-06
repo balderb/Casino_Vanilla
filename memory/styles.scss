@@ -1,5 +1,4 @@
-@import assets; 
-@import grid; 
+@import assets, grid;
 
 * {
   padding: 0;
@@ -12,6 +11,7 @@ body{
   margin-left: 35px;
   margin-right: 35px;
 }
+
 
 header {
   position: absolute;
@@ -65,3 +65,62 @@ header {
 .front-face {
   transform: rotateY(180deg);
 }
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    padding-bottom: 16px;
+    color: $lightGrey;
+    margin-left: 60px;
+  }
+
+  a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: $lightGrey;
+    padding-left: 60px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: $yellow;
+  }
+} 
+
+.score {
+  background-color: $lightGrey;
+  margin: 0;
+
+  p {
+    color: $darkGrey;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .number {
+    font-size: 60px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+} 
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top: 70px;
+  padding-bottom: 30px;
+} 
