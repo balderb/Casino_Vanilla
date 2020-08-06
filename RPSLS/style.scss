@@ -12,7 +12,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
+    width: 50%;
     padding-top: 70px;
     padding-bottom: 30px;
 }
@@ -112,38 +112,51 @@ body {
 
 .score {
     background-color: $lightGrey;
-    height: 200px;
-
-    .white {
-        padding-left: 50px;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-size: 20px;
-        color: $darkGrey;
+    margin: 0;
+    padding: 0;
+  
+    p {
+      color: $darkGrey;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      text-align: center;
     }
-}
+  
+    .text {
+      font-size: 24px;
+      padding-bottom: 30px;
+    }
+  
+    .number {
+      font-size: 60px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
 
 .footer {
     padding-top: 60px;
     padding-bottom: 80px;
-
+  
     p {
-        font-family: 'Raleway', sans-serif;
-        font-style: normal;
-        font-size: 24px;
-        padding-bottom: 16px;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-size: 24px;
+      padding-bottom: 16px;
+      color: $lightGrey;
+      margin-left: 60px;
     }
-
+  
     a {
-        font-family: 'Raleway', sans-serif;
-        font-size: 16px;
-        text-decoration: none;
-        color: $lightGrey;
-        padding-left: 60px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      color: $lightGrey;
+      padding-left: 60px;
     }
-
+  
     a:hover {
-        text-decoration: underline;
-        color: $yellow;
+      text-decoration: underline;
+      color: $yellow;
     }
-}
+  } 
