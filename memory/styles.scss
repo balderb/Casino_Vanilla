@@ -1,4 +1,6 @@
-@import assets, grid;
+
+@import "../assets/assets";
+@import "../assets/grid";
 
 * {
   padding: 0;
@@ -18,22 +20,24 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  grid-area: title;
   
 }
  
 .memory-game {
+
   width: 640px;
-  height: 640px;
+  height: 900px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
-  background-color: #202020;
+  background-color: $darkGrey;
 }
 
 .memory-card {
   width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
+  height: calc(20.333% - 10px);
   margin: 5px;
   position: relative;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
@@ -55,10 +59,10 @@ header {
 .back-face {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 2px;
   position: absolute;
   border-radius: 5px;
-  background: #1C7CCC;
+  //background: #1C7CCC;
   backface-visibility: hidden;
 }
 
