@@ -165,12 +165,9 @@ h2 {
   height: 30px;
 }
 
-.cardPOne {
+.cardImage {
   width: 10px;
-}
-
-.cardCOne {
-  width: 25px;
+  height: auto;
 }
 
 #output {
