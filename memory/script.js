@@ -118,10 +118,6 @@ function totalScore() {
   document.getElementById("total-score").innerHTML = totalScoreValue;
 }
 
-// make sure the score stays printed after refreshing the page
-document.getElementById("total-score").innerHTML = sessionStorage.getItem('totalScore');
-document.getElementById("wins").innerHTML = sessionStorage.getItem('scorePlayerMemory');
-
 // TOTAL GAMES PLAYES
 function totalGames() {
   let totalGamesValue;
@@ -153,3 +149,8 @@ function checkIfWin() {
     totalScore();
   }
 }
+
+// make sure the score stays printed after refreshing the page
+document.getElementById("total-score").innerHTML = sessionStorage.getItem('totalScore');
+document.getElementById("wins").innerHTML = sessionStorage.getItem('scorePlayerMemory');
+document.getElementById("games-played").innerHTML = sessionStorage.getItem('totalGames');
