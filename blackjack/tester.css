@@ -161,12 +161,22 @@ h2 {
   color: white;
 }
 
+#buttons {
+  height: 30px;
+}
+
 .cardPOne {
   width: 10px;
 }
 
 .cardCOne {
   width: 25px;
+}
+
+#output {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .score {
