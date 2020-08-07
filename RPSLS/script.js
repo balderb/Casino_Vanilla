@@ -128,6 +128,7 @@ function game() {
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
+            totalGames();
           }); // change the source of the image to the value that the computer picked
         let result = compare(userChoice, computerChoice); // compare the two choices with the function compare ()
       });
@@ -163,6 +164,7 @@ function game() {
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
+            totalGames();
           });
         let result = compare(userChoice, computerChoice);
       });
@@ -198,6 +200,7 @@ function game() {
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
+            totalGames();
           });
         let result = compare(userChoice, computerChoice);
       });
@@ -232,6 +235,7 @@ function game() {
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
+            totalGames();
           });
         let result = compare(userChoice, computerChoice);
       });
@@ -268,6 +272,7 @@ function game() {
               "src-player"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
+            totalGames();
           });
         let result = compare(userChoice, computerChoice);
       });
@@ -330,3 +335,24 @@ document.getElementById('computer').addEventListener('click', function(event) {
 // make sure the score stays printed after refreshing the page
 document.getElementById("total-score").innerHTML = sessionStorage.getItem('totalScore'); 
 document.getElementById("wins").innerHTML = sessionStorage.getItem('scorePlayer');
+
+// TOTAL GAMES PLAYES
+function totalGames() {
+  let totalGamesValue;
+  // then check whether your localStorage item already exists ...
+if (sessionStorage.getItem('totalGames')) {
+  // if so, increase the value and assign it to your variable
+  totalGamesValue = parseInt(sessionStorage.getItem('totalGames')) + 1;
+  // and reset the localStorage item with the new value
+  sessionStorage.setItem('totalGames', totalGamesValue);
+} else {
+  // if localStorage item does not exist yet initialize
+  // it with your strat value
+  sessionStorage.setItem('totalGames', 1);
+  // and assign start value to your variable
+  totalGamesValue = sessionStorage.getItem('totalGames');
+}
+console.log(totalGamesValue);
+
+document.getElementById("games-played").innerHTML = totalGamesValue;
+}
