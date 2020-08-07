@@ -145,6 +145,7 @@ body {
   background-color: #201f20;
   margin-left: 35px;
   margin-right: 35px;
+  color: white;
 }
 
 .center {
@@ -156,21 +157,12 @@ body {
   padding-bottom: 30px;
 }
 
-img {
-  width: 45%;
-  height: auto;
-}
-
 h2 {
   color: white;
 }
 
-.cardImage img {
-  visibility: hidden;
-}
-
 .cardPOne {
-  width: 25px;
+  width: 10px;
 }
 
 .cardCOne {
