@@ -49,10 +49,12 @@
           resultOne = `You are busted. The computer just won the game!`;
       } else if (a == 21 && b != 21) {
           resultOne = `Congratulations, you win!`;
+          scorePlayer21();
       } else if (a == 21 && b == 21) {
           resultOne = `That's a pity, the computer still wins!`;
       } else if (a < 21 && b > 21) {
           resultOne = `Congratulations, you win!`;
+          scorePlayer21();
       } else if (a < 21) {
           resultOne = "You have the possibility to continue! </br> So please draw a card (hit me) towards the winning hand or stand your ground against the machine!";
       }
@@ -70,6 +72,7 @@
           resultTwo = `I'm sorry, the computer wins!`;
       } else if (a > b) {
           resultTwo = `Congratulations, you win!`;
+          scorePlayer21();
       } else if (a = b) {
           `I'm sorry, the computer wins!`;
       }
@@ -228,5 +231,26 @@
   document.getElementById("reloadpage").addEventListener('click', () => {
       location.reload(true);
   });
+
+  // COUNT THE SCORE
+function scorePlayer21() {
+    let scorePlayer21Value;
+    // then check whether your localStorage item already exists ...
+  if (sessionStorage.getItem('scorePlayer21')) {
+    // if so, increase the value and assign it to your variable
+    scorePlayer21Value = parseInt(sessionStorage.getItem('scorePlayer21')) + 1;
+    // and reset the localStorage item with the new value
+    sessionStorage.setItem('scorePlayer21', scorePlayer21Value);
+  } else {
+    // if localStorage item does not exist yet initialize
+    // it with your strat value
+    sessionStorage.setItem('scorePlayer21', 1);
+    // and assign start value to your variable
+    scorePlayer21Value = paresInt(sessionStorage.getItem('scorePlayer21'));
+  }
+  console.log(scorePlayer21Value);
+
+    document.getElementById("wins").innerHTML = scorePlayer21Value;
+  }
 
 })();
