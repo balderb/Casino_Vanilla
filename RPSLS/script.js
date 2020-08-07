@@ -5,78 +5,67 @@ function game() {
       return `<span>Tie</span><br>it's a tie!`;
     } else if (userChoice == "rock") {
       if (computerChoice == "scissors") {
-        playerScore++;
+        scorePlayerRPSLS();
         return `<span>Congratulations</span><br>rock crushes scissors <br> You Win!`;
       } else if (computerChoice == "paper") {
-        computerScore++;
         return "<span>Sorry</span><br>paper covers rock <br> You Lose";
       } else if (computerChoice == "lizard") {
-        playerScore++;
+        scorePlayerRPSLS();
         return `<span>Congratulations</span><br>rock crushes lizard <br> You Win!`;
       } else if (computerChoice == "spock") {
-        computerScore++;
         return "<span>Sorry</span><br> spock vaporizes rock <br> You Lose";
       }
     } else if (userChoice == "paper") {
       if (computerChoice == "scissors") {
-        computerScore++;
         return "<span>Sorry</span><br> scissors cut paper <br> You Lose";
       } else if (computerChoice == "rock") {
-        playerScore++;
+        scorePlayerRPSLS();
         return `<span>Congratulations</span><br>paper covers rock <br> You Win!`;
       } else if (computerChoice == "lizard") {
-        computerScore++;
         return "<span>Sorry</span><br> lizard eats paper <br> You Lose";
       } else if (computerChoice == "spock") {
-        playerScore++;
+        scorePlayerRPSLS();
         return `<span>Congratulations</span><br>paper disproves spock <br> You Win!`;
       }
     } else if (userChoice == "scissors") {
       if (computerChoice == "paper") {
-        playerScore++;
-        return `<span>Congratulations</span><br>scissors ciut paper <br> You Win!`;
+        scorePlayerRPSLS();
+        return `<span>Congratulations</span><br>scissors cut paper <br> You Win!`;
       } else if (computerChoice == "rock") {
-        computerScore++;
         return "<span>Sorry</span><br> rock crushes scissors <br> You Lose!";
       } else if (computerChoice == "lizard") {
-        playerScore++;
+        scorePlayerRPSLS();
         return `<span>Congratulations</span><br>scissors decapitate lizard <br> You Win!`;
       } else if (computerChoice == "spock") {
-        computerScore++;
         return "<span>Sorry</span> <br>spock smashes scissors <br> You Lose";
       }
     } else if (userChoice == "lizard") {
       if (computerChoice == "scissors") {
-        computerScore++;
         return "<span>Sorry</span><br> scissors decapitate lizard <br> You Lose";
       } else if (computerChoice == "rock") {
-        computerScore++;
         return "<span>Sorry</span><br> rock crushes lizard <br> You Lose";
       } else if (computerChoice == "paper") {
-        playerScore++;
+        scorePlayerRPSLS();
         return `<span>Congratulations</span><br>lizard eats paper <br> You Win!`;
       } else if (computerChoice == "spock") {
-        playerScore++;
+        scorePlayerRPSLS();
         return `<span>Congratulations</span><br>lizard poisons spock <br> You Win!`;
       }
     } else if (userChoice == "spock") {
       if (computerChoice == "scissors") {
-        playerScore++;
+        scorePlayerRPSLS();
         return `<span>Congratulations</span><br>spock smashes scissors <br> You Win!`;
       } else if (computerChoice == "rock") {
-        playerScore++;
+        scorePlayerRPSLS();
         return "<span>Congratulations</span><br>spock vaporizes rock <br> You Win!";
       } else if (computerChoice == "lizard") {
-        computerScore++;
         return "<span>Sorry</span><br> lizard poisons spock <br> You Lose";
       } else if (computerChoice == "paper") {
-        computerScore++;
         return "<span>Sorry</span><br> paper disproves spock <br> You Lose";
       }
     }
   }
-  let computerScore = 0;
-  let playerScore = 0;
+
   // the computer picks a random number between 0 and 1 and store it into a variable
   let computerChoice = Math.random();
 
@@ -130,9 +119,6 @@ function game() {
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
-            document.getElementById("wins").innerHTML = playerScore;
-            document.getElementById("total-score").innerHTML =
-              playerScore + computerScore;
           }); // change the source of the image to the value that the computer picked
         let result = compare(userChoice, computerChoice); // compare the two choices with the function compare ()
       });
@@ -168,9 +154,6 @@ function game() {
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
-            document.getElementById("wins").innerHTML = playerScore;
-            document.getElementById("total-score").innerHTML =
-              playerScore + computerScore;
           });
         let result = compare(userChoice, computerChoice);
       });
@@ -206,9 +189,6 @@ function game() {
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
-            document.getElementById("wins").innerHTML = playerScore;
-            document.getElementById("total-score").innerHTML =
-              playerScore + computerScore;
           });
         let result = compare(userChoice, computerChoice);
       });
@@ -243,9 +223,6 @@ function game() {
               "src-computer"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
-            document.getElementById("wins").innerHTML = playerScore;
-            document.getElementById("total-score").innerHTML =
-              playerScore + computerScore;
           });
         let result = compare(userChoice, computerChoice);
       });
@@ -282,9 +259,6 @@ function game() {
               "src-player"
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
-            document.getElementById("wins").innerHTML = playerScore;
-            document.getElementById("total-score").innerHTML =
-              playerScore + computerScore;
           });
         let result = compare(userChoice, computerChoice);
       });
@@ -297,3 +271,26 @@ game();
 document.getElementById("reset").addEventListener("click", function (event) {
   window.location.reload();
 });
+
+// Function to count the score
+function scorePlayerRPSLS() {
+  let scorePlayerRPSLSValue;
+  // then check whether your localStorage item already exists ...
+if (sessionStorage.getItem('scorePlayer')) {
+  // if so, increase the value and assign it to your variable
+  scorePlayerRPSLSValue = parseInt(sessionStorage.getItem('scorePlayer')) + 1;
+  // and reset the localStorage item with the new value
+  sessionStorage.setItem('scorePlayer', scorePlayerRPSLSValue);
+} else {
+  // if localStorage item does not exist yet initialize
+  // it with your strat value
+  sessionStorage.setItem('scorePlayer', 1);
+  // and assign start value to your variable
+  scorePlayerRPSLSValue = paresInt(sessionStorage.getItem('scorePlayer'));
+}
+console.log(scorePlayerRPSLSValue);
+
+document.getElementById('computer').addEventListener('click', function(event) {
+  document.getElementById("wins").innerHTML = scorePlayerRPSLSValue;
+})
+}
