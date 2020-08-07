@@ -3,6 +3,15 @@
 @import "../assets/assets";
 @import "../assets/grid";
 
+@mixin button {
+  font-family: 'Raleway', sans-serif;
+  background-color: $darkGrey;
+  border: 2px solid $yellow;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: $lightGrey;
+};
+
 body {
     background-color:#201f20;
     margin-left: 35px;
@@ -19,16 +28,13 @@ body {
     padding-bottom: 30px;
 }
 
-h2 {
-    color: white;
-}
-
-#buttons {
-  height: 30px;
+#PlayerTitle {
+  display: block;
+  text-align: center;
 }
 
 .tester {
-  width: 250px;
+  width: 230px;
   display: inline-block;
 }
 
