@@ -3,17 +3,20 @@
 @import "../assets/assets";
 @import "../assets/grid";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
     background-color:#201f20;
     margin-left: 35px;
     margin-right: 35px;
   }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
 
 h2 {
     color: white;
