@@ -26,10 +26,10 @@ Stay tuned for further development!
 ## Who?
 
 Top recent news! The police was able to find the names of the skilled coders :busts_in_silhouette: that where brave enough to tackle such an incredible task! Their names are: <br>
-Lisa Baetsle <br>
-Karolina Dys <br>
-Balder Bongaerts <br>
-Alejandro Jose Perdomo Cuello Polania Noguera (that last one sure is a mouthfull!) <br>
+[Lisa Baetsle](https://github.com/LisaBaetsle) <br>
+[Karolina Dys](https://github.com/KarolinaDys) <br>
+[Balder Bongaerts](https://github.com/balderb) <br>
+[Alejandro Jose Perdomo Cuello Polania Noguera](https://github.com/AlejandroPerdomoCuello) (that last one sure is a mouthfull!) <br>
 The police was also able to locate the webpage that is being built for Casino_Vanilla! <br>
 Take a closer look!! :astonished: <br>
 [Casino_Vanilla](https://balderb.github.io/Casino_Vanilla/index.html). 
