@@ -18,6 +18,11 @@ body {
     padding-bottom: 30px;
 }
 
+img {
+  width: 45%;
+  height: auto;
+}
+
 h2 {
     color: white;
 }
@@ -26,6 +31,14 @@ h2 {
   img {
     visibility: hidden;
   }
+}
+
+.cardPOne {
+  width: 25px;
+}
+
+.cardCOne {
+  width: 25px;
 }
 
 .score {

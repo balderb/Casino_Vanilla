@@ -1,7 +1,8 @@
 /* adding css from  sass pre-compiler*/
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 [class*="col-"] {
@@ -142,6 +143,22 @@
 
 body {
   background-color: #201f20;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+img {
+  width: 45%;
+  height: auto;
 }
 
 h2 {
@@ -150,6 +167,14 @@ h2 {
 
 .cardImage img {
   visibility: hidden;
+}
+
+.cardPOne {
+  width: 25px;
+}
+
+.cardCOne {
+  width: 25px;
 }
 
 .score {
