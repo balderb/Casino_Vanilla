@@ -6,11 +6,13 @@ function game() {
     } else if (userChoice == "rock") {
       if (computerChoice == "scissors") {
         scorePlayerRPSLS();
+        totalScore();
         return `<span>Congratulations</span><br>rock crushes scissors <br> You Win!`;
       } else if (computerChoice == "paper") {
         return "<span>Sorry</span><br>paper covers rock <br> You Lose";
       } else if (computerChoice == "lizard") {
         scorePlayerRPSLS();
+        totalScore();
         return `<span>Congratulations</span><br>rock crushes lizard <br> You Win!`;
       } else if (computerChoice == "spock") {
         return "<span>Sorry</span><br> spock vaporizes rock <br> You Lose";
@@ -20,16 +22,19 @@ function game() {
         return "<span>Sorry</span><br> scissors cut paper <br> You Lose";
       } else if (computerChoice == "rock") {
         scorePlayerRPSLS();
+        totalScore();
         return `<span>Congratulations</span><br>paper covers rock <br> You Win!`;
       } else if (computerChoice == "lizard") {
         return "<span>Sorry</span><br> lizard eats paper <br> You Lose";
       } else if (computerChoice == "spock") {
         scorePlayerRPSLS();
+        totalScore();
         return `<span>Congratulations</span><br>paper disproves spock <br> You Win!`;
       }
     } else if (userChoice == "scissors") {
       if (computerChoice == "paper") {
         scorePlayerRPSLS();
+        totalScore();
         return `<span>Congratulations</span><br>scissors cut paper <br> You Win!`;
       } else if (computerChoice == "rock") {
         return "<span>Sorry</span><br> rock crushes scissors <br> You Lose!";
@@ -46,17 +51,21 @@ function game() {
         return "<span>Sorry</span><br> rock crushes lizard <br> You Lose";
       } else if (computerChoice == "paper") {
         scorePlayerRPSLS();
+        totalScore();
         return `<span>Congratulations</span><br>lizard eats paper <br> You Win!`;
       } else if (computerChoice == "spock") {
         scorePlayerRPSLS();
+        totalScore();
         return `<span>Congratulations</span><br>lizard poisons spock <br> You Win!`;
       }
     } else if (userChoice == "spock") {
       if (computerChoice == "scissors") {
         scorePlayerRPSLS();
+        totalScore();
         return `<span>Congratulations</span><br>spock smashes scissors <br> You Win!`;
       } else if (computerChoice == "rock") {
         scorePlayerRPSLS();
+        totalScore();
         return "<span>Congratulations</span><br>spock vaporizes rock <br> You Win!";
       } else if (computerChoice == "lizard") {
         return "<span>Sorry</span><br> lizard poisons spock <br> You Lose";
@@ -286,7 +295,7 @@ if (sessionStorage.getItem('scorePlayer')) {
   // it with your strat value
   sessionStorage.setItem('scorePlayer', 1);
   // and assign start value to your variable
-  scorePlayerRPSLSValue = paresInt(sessionStorage.getItem('scorePlayer'));
+  scorePlayerRPSLSValue = sessionStorage.getItem('scorePlayer');
 }
 console.log(scorePlayerRPSLSValue);
 
@@ -294,3 +303,30 @@ document.getElementById('computer').addEventListener('click', function(event) {
   document.getElementById("wins").innerHTML = scorePlayerRPSLSValue;
 })
 }
+
+// TOTAL SCORE
+function totalScore() {
+  let totalScoreValue;
+  // then check whether your localStorage item already exists ...
+if (sessionStorage.getItem('totalScore')) {
+  // if so, increase the value and assign it to your variable
+  totalScoreValue = parseInt(sessionStorage.getItem('totalScore')) + 1;
+  // and reset the localStorage item with the new value
+  sessionStorage.setItem('totalScore', totalScoreValue);
+} else {
+  // if localStorage item does not exist yet initialize
+  // it with your strat value
+  sessionStorage.setItem('totalScore', 1);
+  // and assign start value to your variable
+  totalScoreValue = sessionStorage.getItem('totalScore');
+}
+console.log(totalScoreValue);
+
+document.getElementById('computer').addEventListener('click', function(event) {
+  document.getElementById("total-score").innerHTML = totalScoreValue;
+})
+}
+
+// make sure the score stays printed after refreshing the page
+document.getElementById("total-score").innerHTML = sessionStorage.getItem('totalScore'); 
+document.getElementById("wins").innerHTML = sessionStorage.getItem('scorePlayer');

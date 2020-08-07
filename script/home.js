@@ -1,0 +1,1 @@
+document.getElementById("total-score").innerHTML = sessionStorage.getItem('totalScore');

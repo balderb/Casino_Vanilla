@@ -120,3 +120,7 @@ console.log(totalScoreValue);
 
 document.getElementById("total-score").innerHTML = totalScoreValue;
 }
+
+// make sure the score stays printed after refreshing the page
+document.getElementById("total-score").innerHTML = sessionStorage.getItem('totalScore'); 
+document.getElementById("wins").innerHTML = sessionStorage.getItem('scorePlayerMemory');
