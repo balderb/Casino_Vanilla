@@ -246,7 +246,7 @@ function scorePlayer21() {
     // it with your strat value
     sessionStorage.setItem('scorePlayer21', 1);
     // and assign start value to your variable
-    scorePlayer21Value = paresInt(sessionStorage.getItem('scorePlayer21'));
+    scorePlayer21Value = sessionStorage.getItem('scorePlayer21');
   }
   console.log(scorePlayer21Value);
 
