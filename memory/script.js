@@ -16,8 +16,7 @@ function flipCard() {
     
     hasFlippedCard = true;
     firstCard = this;
-    document.getElementById("wins").innerHTML = playerscore;
-    document.getElementById("total-score").innerHTML = playerscore;
+
     return;
   }
 
@@ -37,7 +36,8 @@ function checkIfMatch() {
     // it's a match
     
     console.log('yeey!');
-    playerscore ++;
+    scorePlayerMemory();
+    totalScore();
   
     
     // make sure you can not click again
@@ -78,3 +78,45 @@ secondCard = null;
 
 // Go through the nodelist of divs and give them an eventlistener
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+// COUNT THE SCORE
+function scorePlayerMemory() {
+  let scorePlayerMemoryValue;
+  // then check whether your localStorage item already exists ...
+if (sessionStorage.getItem('scorePlayerMemory')) {
+  // if so, increase the value and assign it to your variable
+  scorePlayerMemoryValue = parseInt(sessionStorage.getItem('scorePlayerMemory')) + 1;
+  // and reset the localStorage item with the new value
+  sessionStorage.setItem('scorePlayerMemory', scorePlayerMemoryValue);
+} else {
+  // if localStorage item does not exist yet initialize
+  // it with your strat value
+  sessionStorage.setItem('scorePlayerMemory', 1);
+  // and assign start value to your variable
+  scorePlayerMemoryValue = sessionStorage.getItem('scorePlayerMemory');
+}
+console.log(scorePlayerMemoryValue);
+
+document.getElementById("wins").innerHTML = scorePlayerMemoryValue;
+}
+
+// TOTAL SCORE
+function totalScore() {
+  let totalScoreValue;
+  // then check whether your localStorage item already exists ...
+if (sessionStorage.getItem('totalScore')) {
+  // if so, increase the value and assign it to your variable
+  totalScoreValue = parseInt(sessionStorage.getItem('totalScore')) + 1;
+  // and reset the localStorage item with the new value
+  sessionStorage.setItem('totalScore', totalScoreValue);
+} else {
+  // if localStorage item does not exist yet initialize
+  // it with your strat value
+  sessionStorage.setItem('totalScore', 1);
+  // and assign start value to your variable
+  totalScoreValue = sessionStorage.getItem('totalScore');
+}
+console.log(totalScoreValue);
+
+document.getElementById("total-score").innerHTML = totalScoreValue;
+}
