@@ -7,6 +7,7 @@ body {
     background-color:#201f20;
     margin-left: 35px;
     margin-right: 35px;
+    color: white;
   }
 
 .center {
@@ -18,27 +19,26 @@ body {
     padding-bottom: 30px;
 }
 
-img {
-  width: 45%;
-  height: auto;
-}
-
 h2 {
     color: white;
 }
 
-.cardImage {
-  img {
-    visibility: hidden;
-  }
+#buttons {
+  height: 30px;
 }
 
 .cardPOne {
-  width: 25px;
+  width: 10px;
 }
 
 .cardCOne {
   width: 25px;
+}
+
+#output {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .score {
