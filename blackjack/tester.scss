@@ -3,8 +3,16 @@
 @import "../assets/assets";
 @import "../assets/grid";
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-color:#201f20;
+    margin-left: 35px;
+    margin-right: 35px;
   }
 
 h2 {
@@ -66,5 +74,6 @@ h2 {
       color: $yellow;
     }
   } 
+
 
 
