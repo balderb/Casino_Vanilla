@@ -293,6 +293,4 @@ console.log(scorePlayerRPSLSValue);
 document.getElementById('computer').addEventListener('click', function(event) {
   document.getElementById("wins").innerHTML = scorePlayerRPSLSValue;
 })
-
-
 }
