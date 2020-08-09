@@ -141,6 +141,15 @@
   display: table;
 }
 
+.buttons {
+  font-family: 'Raleway', sans-serif;
+  background-color: #202020;
+  border: 2px solid #F0EC7B;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: #E6E6E6;
+}
+
 body {
   background-color: #201f20;
   margin-left: 35px;
@@ -159,23 +168,29 @@ body {
 
 #PlayerTitle {
   display: block;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.tester {
-  width: 190px;
+.cardpx {
+  width: 185px;
   display: inline-block;
 }
 
 #output {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
+  border: 2px solid #F0EC7B;
   display: block;
-  border-style: solid;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: #E6E6E6;
 }
 
 .score {

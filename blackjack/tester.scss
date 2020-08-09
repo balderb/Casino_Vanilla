@@ -11,6 +11,10 @@
   color: $lightGrey;
 };
 
+.buttons {
+  @include button;
+}
+
 body {
     background-color:#201f20;
     margin-left: 35px;
@@ -29,23 +33,27 @@ body {
 
 #PlayerTitle {
   display: block;
-  text-align: center;
+  align-items: center;
 }
 
-.tester {
-  width: 190px;
+.cardpx {
+  width: 185px;
   display: inline-block;
 }
 
 #output {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
+  border: 2px solid $yellow;
   display: block;
-  border-style: solid;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 30px;  
+  font-size: 24px;
+  padding: 10px 20px;
+  color: $lightGrey;
 }
 
 .score {
