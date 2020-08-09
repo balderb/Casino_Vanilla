@@ -56,7 +56,7 @@
           resultOne = `Congratulations, you win!`;
           scorePlayer21();
       } else if (a < 21) {
-          resultOne = "You have the possibility to continue! </br> Please draw a card (hit me) towards the winning <br> hand or stand your ground against the machine!";
+          resultOne = "You have the possibility to continue! </br> Please draw a card (hit me) towards the winning <br> hand or 'stand' your ground against the machine!";
       }
       return resultOne;
   }
