@@ -56,7 +56,7 @@
           resultOne = `Congratulations, you win!`;
           scorePlayer21();
       } else if (a < 21) {
-          resultOne = "You have the possibility to continue! </br> Please draw a card (hit me) towards the winning <br> hand or stand your ground against the machine!";
+          resultOne = "You have the possibility to continue! </br> Please draw a card (hit me) towards the winning <br> hand or 'stand' your ground against the machine!";
       }
       return resultOne;
   }
@@ -100,7 +100,7 @@
       ActionToTake = textActionOne(totalVPlayer, totalVComputer); // Create the text with the result of the first compare function
 
       // Print the text in the HTML
-      document.getElementById("output").innerHTML = `Your hand is ${totalVPlayer} <br> The computers' hand is ${totalVComputer} <br> ${ActionToTake}`;
+      document.getElementById("output").innerHTML = `Your hand is ${totalVPlayer}. <br> The computers' hand is ${totalVComputer}. <br> ${ActionToTake}`;
 
       // Player
       // store the suits and the value of every player card in the empty string resultPCards. Use += to not overwrite each time but add to the string.

@@ -141,6 +141,24 @@
   display: table;
 }
 
+.buttonsall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.buttons {
+  font-family: 'Raleway', sans-serif;
+  background-color: #202020;
+  border: 2px solid #F0EC7B;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: #E6E6E6;
+}
+
 body {
   background-color: #201f20;
   margin-left: 35px;
@@ -154,30 +172,37 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 45%;
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 15px;
 }
 
-h2 {
-  color: white;
+#PlayerTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#buttons {
-  height: 30px;
-}
-
-.cardPOne {
-  width: 10px;
-}
-
-.cardCOne {
-  width: 25px;
+.cardpx {
+  width: 185px;
+  display: inline-block;
 }
 
 #output {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
-  padding-top: 30px;
+  border: 2px solid #F0EC7B;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding-top: 60px;
   padding-bottom: 30px;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: #E6E6E6;
 }
 
 .score {

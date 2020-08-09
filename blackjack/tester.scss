@@ -1,7 +1,24 @@
 /* adding css from  sass pre-compiler*/
-
 @import "../assets/assets";
 @import "../assets/grid";
+
+@mixin button {
+  font-family: 'Raleway', sans-serif;
+  background-color: $darkGrey;
+  border: 2px solid $yellow;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: $lightGrey;
+};
+
+.buttonsall {
+  display: flex;
+  justify-content: left;
+}
+
+.buttons {
+  @include button;
+}
 
 body {
     background-color:#201f20;
@@ -16,30 +33,33 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 45%;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 15px;
 }
 
-h2 {
-    color: white;
+#PlayerTitle {
+  display: flex;
+  justify-content: center;
 }
 
-#buttons {
-  height: 30px;
-}
-
-.cardPOne {
-  width: 10px;
-}
-
-.cardCOne {
-  width: 25px;
+.cardpx {
+  width: 185px;
+  display: inline-block;
 }
 
 #output {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  border: 2px solid $yellow;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding-top: 60px;
+  padding-bottom: 30px;  
+  font-size: 24px;
+  padding: 10px 20px;
+  color: $lightGrey;
 }
 
 .score {
