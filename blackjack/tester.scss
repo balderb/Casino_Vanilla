@@ -11,6 +11,11 @@
   color: $lightGrey;
 };
 
+.buttonsall {
+  display: flex;
+  justify-content: left;
+}
+
 .buttons {
   @include button;
 }
@@ -32,8 +37,8 @@ body {
 }
 
 #PlayerTitle {
-  display: block;
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cardpx {
@@ -49,7 +54,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 30px;  
   font-size: 24px;
   padding: 10px 20px;
