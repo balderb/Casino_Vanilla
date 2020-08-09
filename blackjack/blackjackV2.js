@@ -56,7 +56,7 @@
           resultOne = `Congratulations, you win!`;
           scorePlayer21();
       } else if (a < 21) {
-          resultOne = "You have the possibility to continue! </br> Please draw a card (hit me) towards the winning <br> hand or 'stand' your ground against the machine!";
+          resultOne = "You have the possibility to continue! </br> Draw a card (hit me) or 'stand' your ground against the machine!";
       }
       return resultOne;
   }
@@ -99,7 +99,7 @@
       totalVComputer = (computerCards[0].Points) + (computerCards[1].Points); // Get the sum of the 2 computer cards
       ActionToTake = textActionOne(totalVPlayer, totalVComputer); // Create the text with the result of the first compare function
 
-      // Print the text in the HTML
+      // Print the text in onto the HTML page inside the DOM
       document.getElementById("output").innerHTML = `Your hand is ${totalVPlayer}. <br> The computers' hand is ${totalVComputer}. <br> ${ActionToTake}`;
 
       // Player
