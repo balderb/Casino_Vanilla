@@ -2,7 +2,6 @@
 @import "../assets/assets";
 @import "../assets/grid";
 
-
 @mixin button {
   font-family: 'Raleway', sans-serif;
   background-color: $darkGrey;
@@ -34,12 +33,17 @@ body {
 }
 
 .tester {
-  width: 230px;
+  width: 190px;
   display: inline-block;
 }
 
 #output {
   text-align: center;
+  display: block;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
