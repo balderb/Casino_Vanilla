@@ -5,7 +5,7 @@
   let deck = new Array(); // We create an empty array of the deck for the function createDeck ()
 
   // Now we are going to create a deck (of cards) to play with.
-  // We're going to pair up each suit from the array above, with each possible value also from the array declared above. And store it in deck
+  // We're going to pair up each suit from the array above, with each possible value also from the array declared above. And store it in the deck. In this case, Deck variable.
   function createDeck() {
       for (let v = 0; v < values.length; v++) { // We do this for every value
           for (let s = 0; s < suits.length; s++) { // and for every suit
@@ -150,8 +150,9 @@
       document.getElementById('cardCTwo').src = `../assets/${computerCards[1].Value}-${computerCards[1].Suits}.png`
   });
 
-
+  // **** SPECIFICITIES FOR DRAWING CARDS **** 
   // WHEN THE PLAYER DECIDES TO DRAW
+
   document.getElementById("draw").addEventListener('click', () => {
       playerCards.push(deck.pop()); // add a card to the array playerCards
 
