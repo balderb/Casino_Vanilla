@@ -6,10 +6,18 @@
   font-family: 'Raleway', sans-serif;
   background-color: $darkGrey;
   border: 2px solid $yellow;
-  font-size: 12px;
-  padding: 10px 10px;
+  font-size: 24px;
+  padding: 10px 20px;
   color: $lightGrey;
 };
+
+.main-title {
+  visibility: hidden;
+}
+
+.col col-m-7 {
+  padding-bottom: 30px;
+}
 
 .buttonsall {
   display: flex;
@@ -111,6 +119,11 @@ body {
       color: $yellow;
     }
   } 
+
+  result column col-m-12 {
+    margin-bottom: 20px;
+  }
+
 
 
 
