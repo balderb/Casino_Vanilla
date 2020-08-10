@@ -63,7 +63,7 @@
             totalScore();
             totalGames();
         } else if (a < 21) {
-            resultOne = "Please continue! </br> Draw a card (hit me) or 'stand' your ground against the machine!";
+            resultOne = "Please continue! </br> Draw a card or stand your ground against the machine!";
         }
         return resultOne;
     }
