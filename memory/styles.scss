@@ -2,48 +2,52 @@
 @import "../assets/assets";
 @import "../assets/grid";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-
-
 body{
   background-color: $darkGrey;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 
-header {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  grid-area: title;
-  
+.header {
+  margin-top: 70px;
+
+  h1 {
+      font-family: 'Raleway', sans-serif;
+      color: $lightGrey;
+      font-size: 45px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+  }
+
+  h2 {
+      font-family: 'Alex Brush', cursive;
+      color: $yellow;
+      font-size: 70px;
+      font-weight: lighter;
+      text-align: center;
+      margin-top: -60px;
+      margin-left: 14%;
+      text-shadow: 6px 6px 10px #000000a8;
+  }
 }
  
 .memory-game {
-
-  width: 640px;
-  height: 900px;
+  width: 610px;
+  height: 500px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
-  background-color: $darkGrey;
+  margin-bottom: 80px;
 }
 
 .memory-card {
-  width: calc(25% - 10px);
-  height: calc(20.333% - 10px);
-  margin: 5px;
+  width: 150px;
+  height: 150px;
+  margin: 1px;
   position: relative;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
-  transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
 }
@@ -63,8 +67,6 @@ header {
   height: 100%;
   padding: 2px;
   position: absolute;
-  border-radius: 5px;
-  //background: #1C7CCC;
   backface-visibility: hidden;
 }
 
