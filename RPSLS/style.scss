@@ -3,77 +3,101 @@
 
 body {
     background-color: $darkGrey;
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-top: 70px;
-    padding-bottom: 30px;
+.header {
+    margin-top: 70px;
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: $lightGrey;
+        font-size: 45px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Alex Brush', cursive;
+        color: $yellow;
+        font-size: 70px;
+        font-weight: lighter;
+        text-align: right;
+        margin-top: -60px;
+        margin-right: 275px;
+        text-shadow: 6px 6px 10px #000000a8;
+    }
 }
 
+.player-one,
+.player-two,
 .vs {
-    padding-top: 150px;
-    padding-left: 300px;
-    padding-right: 250px;
-}
-
-.player-one {
-    align-items: center;
+    text-align: center;
 }
 
 .player-one img {
-    width: 225px;
-    height: 225px;
+    width: 230px;
+    height: 230px;
 }
 
 .player-two img {
-    width: 225px;
-    height: 225px;
+    width: 230px;
+    height: 230px;
 }
 
 .vs p {
     color: $lightGrey;
     font-size: 60px;
-    padding-left: 60px;
 }
 
-.b-r {
-    margin-left: 300px;
-    margin-right: 20px;
-}
+.buttons-user {
+    input {
+        width: 70px;
+        height: 70px;
+    }
 
-.b-p {
-    margin-right: 15px;
-}
+    .button-rock,
+    .button-lizard {
+        text-align: right;
+    }
 
-.b-l {
-    margin-left: 335px;
-    margin-right: 17px;
-}
+    .button-paper {
+        text-align: center;
+    }
 
-.buttons-user input {
-    width: 60px;
-    height: 60px;
+    .button-lizard {
+        padding-right: 30px;
+        padding-top: 0;
+    }
 
+    .button-spock {
+        padding-left: 30px;
+        padding-top: 0;
+    }
+
+    .button-rock,
+    .button-paper,
+    .button-scissor {
+        padding-bottom: 0;
+    }
 }
 
 .button-computer {
     width: 70px;
     height: 70px;
-    margin-left: 130px;
+}
+
+.computer,
+.reset {
+    text-align: center;
 }
 
 .button-reset {
-    margin-left: 123px;
     margin-top: 15px;
 }
 
-.button-reset input {
+.reset input {
     background-color: $darkGrey;
     color: $lightGrey;
     border-color: $lightGrey;
@@ -83,80 +107,82 @@ body {
     font-style: italic;
 }
 
+
 .result {
-    border-style: solid;
-    border-color: $yellow;
+    border: 4px solid $yellow;
     width: 500px;
-    margin-left: 490px;
     margin-top: 40px;
     height: 220px;
     margin-bottom: 50px;
-}
+    margin-left: auto;
+    margin-right: auto;
 
-.result p {
-    color: $lightGrey;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Raleway', sans-serif;
-    color: $lightGrey;
-    font-style: italic;
-    font-weight: 100;
+    p {
+        color: $lightGrey;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif;
+        color: $lightGrey;
+    }
 }
 
 .result p span {
-    font-size: 40px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 70px;
     color: $yellow;
-    font-family: 'Parisienne', cursive;
 }
+
+
 
 .score {
     background-color: $lightGrey;
     margin: 0;
     padding: 0;
-  
+
     p {
-      color: $darkGrey;
-      font-family: 'Raleway', sans-serif;
-      font-style: normal;
-      text-align: center;
-    
-    }
-   .text {
-      font-size: 24px;
-      padding-bottom: 30px;
-    }
-  
-    .number {
-      font-size: 60px;
-      padding-bottom: 0;
-      margin-bottom: 0;
+        color: $darkGrey;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        text-align: center;
+
     }
 
-  }
+    .text {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .number {
+        font-size: 60px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+}
 
 .footer {
     padding-top: 60px;
     padding-bottom: 80px;
-  
+
     p {
-      font-family: 'Raleway', sans-serif;
-      font-style: normal;
-      font-size: 24px;
-      padding-bottom: 16px;
-      color: $lightGrey;
-      margin-left: 60px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-size: 24px;
+        padding-bottom: 16px;
+        color: $lightGrey;
+        margin-left: 60px;
     }
-  
+
     a {
-      font-family: 'Raleway', sans-serif;
-      font-size: 16px;
-      text-decoration: none;
-      color: $lightGrey;
-      padding-left: 60px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        color: $lightGrey;
+        padding-left: 60px;
     }
-  
+
     a:hover {
-      text-decoration: underline;
-      color: $yellow;
+        text-decoration: underline;
+        color: $yellow;
     }
-  } 
+}

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 [class*="col-"] {
@@ -142,78 +141,100 @@
 
 body {
   background-color: #202020;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-top: 70px;
-  padding-bottom: 30px;
+.header {
+  margin-top: 70px;
 }
 
+.header h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #E6E6E6;
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header h2 {
+  font-family: 'Alex Brush', cursive;
+  color: #F0EC7B;
+  font-size: 70px;
+  font-weight: lighter;
+  text-align: right;
+  margin-top: -60px;
+  margin-right: 275px;
+  text-shadow: 6px 6px 10px #000000a8;
+}
+
+.player-one,
+.player-two,
 .vs {
-  padding-top: 150px;
-  padding-left: 300px;
-  padding-right: 250px;
-}
-
-.player-one {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 .player-one img {
-  width: 225px;
-  height: 225px;
+  width: 230px;
+  height: 230px;
 }
 
 .player-two img {
-  width: 225px;
-  height: 225px;
+  width: 230px;
+  height: 230px;
 }
 
 .vs p {
   color: #E6E6E6;
   font-size: 60px;
-  padding-left: 60px;
-}
-
-.b-r {
-  margin-left: 300px;
-  margin-right: 20px;
-}
-
-.b-p {
-  margin-right: 15px;
-}
-
-.b-l {
-  margin-left: 335px;
-  margin-right: 17px;
 }
 
 .buttons-user input {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+}
+
+.buttons-user .button-rock,
+.buttons-user .button-lizard {
+  text-align: right;
+}
+
+.buttons-user .button-paper {
+  text-align: center;
+}
+
+.buttons-user .button-lizard {
+  padding-right: 30px;
+  padding-top: 0;
+}
+
+.buttons-user .button-spock {
+  padding-left: 30px;
+  padding-top: 0;
+}
+
+.buttons-user .button-rock,
+.buttons-user .button-paper,
+.buttons-user .button-scissor {
+  padding-bottom: 0;
 }
 
 .button-computer {
   width: 70px;
   height: 70px;
-  margin-left: 130px;
+}
+
+.computer,
+.reset {
+  text-align: center;
 }
 
 .button-reset {
-  margin-left: 123px;
   margin-top: 15px;
 }
 
-.button-reset input {
+.reset input {
   background-color: #202020;
   color: #E6E6E6;
   border-color: #E6E6E6;
@@ -224,13 +245,13 @@ body {
 }
 
 .result {
-  border-style: solid;
-  border-color: #F0EC7B;
+  border: 4px solid #F0EC7B;
   width: 500px;
-  margin-left: 490px;
   margin-top: 40px;
   height: 220px;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .result p {
@@ -239,14 +260,12 @@ body {
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: #E6E6E6;
-  font-style: italic;
-  font-weight: 100;
 }
 
 .result p span {
-  font-size: 40px;
+  font-family: 'Alex Brush', cursive;
+  font-size: 70px;
   color: #F0EC7B;
-  font-family: 'Parisienne', cursive;
 }
 
 .score {
