@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 [class*="col-"] {
@@ -140,70 +139,62 @@
   display: table;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   background-color: #202020;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
-header {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  grid-area: title;
+.header {
+  margin-top: 70px;
+}
+
+.header h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #E6E6E6;
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header h2 {
+  font-family: 'Alex Brush', cursive;
+  color: #F0EC7B;
+  font-size: 70px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: -60px;
+  margin-left: 14%;
+  text-shadow: 6px 6px 10px #000000a8;
 }
 
 .memory-game {
-  width: 640px;
-  height: 900px;
+  width: 610px;
+  height: 500px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  background-color: #202020;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  margin-bottom: 80px;
 }
 
 .memory-card {
-  width: calc(25% - 10px);
-  height: calc(20.333% - 10px);
-  margin: 5px;
+  width: 150px;
+  height: 150px;
+  margin: 1px;
   position: relative;
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
+  transform-style: preserve-3d;
   transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
 }
 
 .memory-card:active {
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
+  transform: scale(0.97);
   transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
 }
 
 .memory-card.flip {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .front-face,
@@ -212,14 +203,11 @@ header {
   height: 100%;
   padding: 2px;
   position: absolute;
-  border-radius: 5px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .front-face {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .footer {
