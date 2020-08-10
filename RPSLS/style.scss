@@ -9,6 +9,7 @@ body {
 
 .header {
     margin-top: 70px;
+
     h1 {
         font-family: 'Raleway', sans-serif;
         color: $lightGrey;
@@ -23,9 +24,9 @@ body {
         color: $yellow;
         font-size: 70px;
         font-weight: lighter;
-        text-align: right;
+        text-align: center;
         margin-top: -60px;
-        margin-right: 275px;
+        margin-left: 25%;
         text-shadow: 6px 6px 10px #000000a8;
     }
 }
@@ -83,37 +84,41 @@ body {
     }
 }
 
-.button-computer {
-    width: 70px;
-    height: 70px;
-}
-
-.computer,
+.buttons-computer {
+    #computer {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .computer,
 .reset {
     text-align: center;
 }
 
-.button-reset {
-    margin-top: 15px;
+#reset {
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    background-color: $darkGrey;
+    border: 2px solid $yellow;
+    font-size: 24px;
+    padding: 10px 20px;
+    color: $lightGrey;
 }
 
-.reset input {
-    background-color: $darkGrey;
-    color: $lightGrey;
-    border-color: $lightGrey;
-    border: solid 1px;
-    width: 100px;
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
+#reset:hover {
+    background-color: $yellow;
+    color: $darkGrey;
+}
 }
 
 
 .result {
+    visibility: hidden;
     border: 4px solid $yellow;
     width: 500px;
     margin-top: 40px;
     height: 220px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
 
@@ -124,12 +129,12 @@ body {
         font-family: 'Raleway', sans-serif;
         color: $lightGrey;
     }
-}
 
-.result p span {
-    font-family: 'Alex Brush', cursive;
+    p span {
+        font-family: 'Alex Brush', cursive;
     font-size: 70px;
     color: $yellow;
+    }
 }
 
 

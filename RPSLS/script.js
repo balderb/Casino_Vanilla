@@ -129,8 +129,10 @@ function game() {
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
             totalGames();
+            document.querySelector('.result').style.visibility = "visible";
           }); // change the source of the image to the value that the computer picked
         let result = compare(userChoice, computerChoice); // compare the two choices with the function compare ()
+        
       });
 
     // the user picks PAPER
@@ -165,8 +167,10 @@ function game() {
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
             totalGames();
+            document.querySelector('.result').style.visibility = "visible";
           });
         let result = compare(userChoice, computerChoice);
+        
       });
 
     // the user picks SCISSORS
@@ -201,8 +205,10 @@ function game() {
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
             totalGames();
+            document.querySelector('.result').style.visibility = "visible";
           });
         let result = compare(userChoice, computerChoice);
+        
       });
     // the user picks LIZARD
     document
@@ -236,8 +242,10 @@ function game() {
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
             totalGames();
+            document.querySelector('.result').style.visibility = "visible";
           });
         let result = compare(userChoice, computerChoice);
+        
       });
 
     // the user picks SPOCK
@@ -273,8 +281,10 @@ function game() {
             ).src = `../assets/${computerChoice}.svg`;
             document.getElementById("target").innerHTML = result;
             totalGames();
+            document.querySelector('.result').style.visibility = "visible";
           });
         let result = compare(userChoice, computerChoice);
+        
       });
   }
   buttons();
