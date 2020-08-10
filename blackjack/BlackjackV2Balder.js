@@ -63,7 +63,7 @@
             totalScore();
             totalGames();
         } else if (a < 21) {
-            resultOne = "Please continue! </br> Draw a card or stand your ground against the machine!";
+            resultOne = "Go on! </br> Draw a card or stand your ground against the machine!";
         }
         return resultOne;
     }
@@ -170,7 +170,7 @@
         ActionToTake = textActionOne(totalVPlayer, totalVComputer); // Create the text with the result of the first compare function
   
         // Overprint the text in the HTML
-         document.getElementById("result").innerHTML = `${ActionToTake}`;
+         document.getElementById("output").innerHTML = `${ActionToTake}`;
   
         resultPCards = ""; // reset the string resultPCards to empty
         // store the suits and the value of every player card in the empty string resultPCards. Use += to not overwrite each time but add to the string.
