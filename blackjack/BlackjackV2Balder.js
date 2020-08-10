@@ -182,7 +182,6 @@
         
         document.getElementById("result").innerHTML = `Your hand is ${totalVPlayer}`; // Print the result in the innerHTML
   
-
         // If the player has 3 cards, change the visibility of the 3th image in the html and change the source
         if (playerCards.length == 3) {
             document.getElementById("cardPThree").style.visibility = "visible";
