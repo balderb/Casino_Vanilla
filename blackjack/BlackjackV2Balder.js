@@ -329,7 +329,8 @@
     document.getElementById("games-played").innerHTML = totalGamesValue;
     }
   
-  
   })();
+
+  
   
   
