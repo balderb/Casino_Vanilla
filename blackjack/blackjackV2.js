@@ -45,16 +45,23 @@
       let resultOne;
       if (b == 21) {
           resultOne = `I'm sorry, the computer wins!`;
+          totalGames();
       } else if (a > 21) {
           resultOne = `You are busted. The computer just won the game!`;
+          totalGames();
       } else if (a == 21 && b != 21) {
           resultOne = `Congratulations, you win!`;
           scorePlayer21();
+          totalScore();
+          totalGames();
       } else if (a == 21 && b == 21) {
           resultOne = `That's a pity, the computer still wins!`;
+          totalGames();
       } else if (a < 21 && b > 21) {
           resultOne = `Congratulations, you win!`;
           scorePlayer21();
+          totalScore();
+          totalGames();
       } else if (a < 21) {
           resultOne = "You have the possibility to continue! </br> Draw a card (hit me) or 'stand' your ground against the machine!";
       }
@@ -66,15 +73,23 @@
       let resultTwo;
       if (b == 21) {
           resultTwo = `I'm sorry, the computer wins!`;
+          totalGames();
       } else if (b > 21) {
           resultTwo = `The computer is busted. You win!`;
+          scorePlayer21();
+          totalScore();
+          totalGames();
       } else if (a < b) {
           resultTwo = `I'm sorry, the computer wins!`;
+          totalGames();
       } else if (a > b) {
           resultTwo = `Congratulations, you win!`;
+          totalScore();
           scorePlayer21();
+          totalGames();
       } else if (a = b) {
           `I'm sorry, the computer wins!`;
+          totalGames();
       }
       return resultTwo;
   }
@@ -252,5 +267,56 @@ function scorePlayer21() {
 
     document.getElementById("wins").innerHTML = scorePlayer21Value;
   }
+
+  
+  // TOTAL SCORE
+  function totalScore() {
+    let totalScoreValue;
+    // then check whether your localStorage item already exists ...
+  if (sessionStorage.getItem('totalScore')) {
+    // if so, increase the value and assign it to your variable
+    totalScoreValue = parseInt(sessionStorage.getItem('totalScore')) + 1;
+    // and reset the localStorage item with the new value
+    sessionStorage.setItem('totalScore', totalScoreValue);
+  } else {
+    // if localStorage item does not exist yet initialize
+    // it with your strat value
+    sessionStorage.setItem('totalScore', 1);
+    // and assign start value to your variable
+    totalScoreValue = sessionStorage.getItem('totalScore');
+  }
+  console.log(totalScoreValue);
+  
+  
+    document.getElementById("total-score").innerHTML = totalScoreValue;
+  
+  }
+  
+  // make sure the score stays printed after refreshing the page
+  document.getElementById("total-score").innerHTML = sessionStorage.getItem('totalScore'); 
+  document.getElementById("wins").innerHTML = sessionStorage.getItem('scorePlayer21');
+  document.getElementById("games-played").innerHTML = sessionStorage.getItem('totalGames');
+  
+  // TOTAL GAMES PLAYES
+  function totalGames() {
+    let totalGamesValue;
+    // then check whether your localStorage item already exists ...
+  if (sessionStorage.getItem('totalGames')) {
+    // if so, increase the value and assign it to your variable
+    totalGamesValue = parseInt(sessionStorage.getItem('totalGames')) + 1;
+    // and reset the localStorage item with the new value
+    sessionStorage.setItem('totalGames', totalGamesValue);
+  } else {
+    // if localStorage item does not exist yet initialize
+    // it with your strat value
+    sessionStorage.setItem('totalGames', 1);
+    // and assign start value to your variable
+    totalGamesValue = sessionStorage.getItem('totalGames');
+  }
+  console.log(totalGamesValue);
+  
+  document.getElementById("games-played").innerHTML = totalGamesValue;
+  }
+
 
 })();
