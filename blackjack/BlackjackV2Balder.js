@@ -117,9 +117,6 @@
         // Print the text in onto the HTML page inside the DOM
          document.getElementById("output").innerHTML = `${ActionToTake}`; // commented out for redundancy (again^2!)
   
-
-
-
         // *** I DON'T THINK WE NEED THIS PART ANYMORE UNTIL LINE 127 ***
         // Player
         // store the suits and the value of every player card in the empty string resultPCards. Use += to not overwrite each time but add to the string.
@@ -127,9 +124,7 @@
         for (i = 0; i < playerCards.length; i++) {
             resultPCards += `${playerCards[i].Value} of ${playerCards[i].Suits} </br>`;
         }
-        
-
-
+    
         // Print the string resultPCards in the HTML
         document.getElementById("result").innerHTML = `Your hand is ${totalVPlayer}`;
         // Change the visibility of the images in the html
@@ -235,7 +230,7 @@
             resultPComputer += `${computerCards[i].Value} of ${computerCards[i].Suits} </br>`;
         }
         
-        document.getElementById("resultComputer").innerHTML = resultPComputer;
+        document.getElementById("resultComputer").innerHTML = `The computers' hand is ${totalVComputer}`;
   
         // If the computer has 3 cards, change the visibility of the 3th image in the html and change the source
         if (computerCards.length == 3) {
@@ -314,7 +309,7 @@
     document.getElementById("wins").innerHTML = sessionStorage.getItem('scorePlayer21');
     document.getElementById("games-played").innerHTML = sessionStorage.getItem('totalGames');
     
-    // TOTAL GAMES PLAYES
+    // TOTAL GAMES PLAYED
     function totalGames() {
       let totalGamesValue;
       // then check whether your localStorage item already exists ...
