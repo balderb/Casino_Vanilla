@@ -130,6 +130,9 @@ function game() {
             document.getElementById("target").innerHTML = result;
             totalGames();
             document.querySelector('.result').style.visibility = "visible";
+            document.getElementById("reset").style.visibility = "visible";
+            document.querySelector('.buttons-user').style.visibility = "hidden";
+            document.querySelector('.buttons-computer').style.visibility = "hidden";
           }); // change the source of the image to the value that the computer picked
         let result = compare(userChoice, computerChoice); // compare the two choices with the function compare ()
         
@@ -168,6 +171,9 @@ function game() {
             document.getElementById("target").innerHTML = result;
             totalGames();
             document.querySelector('.result').style.visibility = "visible";
+            document.getElementById("reset").style.visibility = "visible";
+            document.querySelector('.buttons-user').style.visibility = "hidden";
+            document.querySelector('.buttons-computer').style.visibility = "hidden";
           });
         let result = compare(userChoice, computerChoice);
         
@@ -206,6 +212,9 @@ function game() {
             document.getElementById("target").innerHTML = result;
             totalGames();
             document.querySelector('.result').style.visibility = "visible";
+            document.getElementById("reset").style.visibility = "visible";
+            document.querySelector('.buttons-user').style.visibility = "hidden";
+            document.querySelector('.buttons-computer').style.visibility = "hidden";
           });
         let result = compare(userChoice, computerChoice);
         
@@ -243,6 +252,9 @@ function game() {
             document.getElementById("target").innerHTML = result;
             totalGames();
             document.querySelector('.result').style.visibility = "visible";
+            document.getElementById("reset").style.visibility = "visible";
+            document.querySelector('.buttons-user').style.visibility = "hidden";
+            document.querySelector('.buttons-computer').style.visibility = "hidden";
           });
         let result = compare(userChoice, computerChoice);
         
@@ -282,6 +294,9 @@ function game() {
             document.getElementById("target").innerHTML = result;
             totalGames();
             document.querySelector('.result').style.visibility = "visible";
+            document.getElementById("reset").style.visibility = "visible";
+            document.querySelector('.buttons-user').style.visibility = "hidden";
+            document.querySelector('.buttons-computer').style.visibility = "hidden";
           });
         let result = compare(userChoice, computerChoice);
         
@@ -294,6 +309,8 @@ game();
 
 document.getElementById("reset").addEventListener("click", function (event) {
   window.location.reload();
+  document.querySelector('.buttons-user').style.visibility = "visible";
+  document.querySelector('.buttons-computer').style.visibility = "visible";
 });
 
 // Function to count the score
