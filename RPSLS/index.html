@@ -12,44 +12,59 @@
 <body>
   <div class="game">
     <div class="header">
-      <img src="../assets/title-rpsls@2x.png" alt="logo" class='center'>
+      <h1>Rock, Paper, Scissors, </br> Lizard, Spock</h1>
+      <h2>The game</h2>
     </div>
 
-    <div class="row vs">
-      <div class="player-one column col-m-4">
-        <img class="img" id="src-player" src="../assets/rock.svg" alt="Paper" width="200" height="200" />
+    <div class="row">
+      <div class="player-one column col-m-5">
+        <img class="img" id="src-player" src="../assets/rock.svg" alt="Paper"/>
       </div>
-      <p class="column col-m-4">VS</p>
-      <div class="player-two column col-m-4">
-        <img class="img" id="src-computer" src="../assets/rock.svg" alt="Rock" width="200" height="200" />
+      <div class="vs column col-m-2">
+        <p>VS</p>
+      </div>
+      <div class="player-two column col-m-5">
+        <img class="img" id="src-computer" src="../assets/rock.svg" alt="Rock"/>
       </div>
     </div>
 
     <div class="row">
-      <div class="buttons-user column col-m-6">
-        <input class="b-r" type="image" id="button-rock" value="rock" src="../assets/rock.svg" alt="Rock" />
-        <input class="b-p" type="image" id="button-paper" value="paper" src="../assets/paper.svg" alt="Paper" />
-        <input class="b-s" type="image" id="button-scissors" value="scissors" src="../assets/scissors.svg"
+      <div class="buttons-user column col-m-5">
+        <div class="row">
+          <div class="col-m-4 button-rock">
+            <input type="image" id="button-rock" value="rock" src="../assets/rock.svg" alt="Rock"/>
+          </div>
+          <div class="col-m-4 button-paper">
+            <input type="image" id="button-paper" value="paper" src="../assets/paper.svg" alt="Paper"/>
+          </div>
+          <div class="col-m-4 button-scissor">
+            <input type="image" id="button-scissors" value="scissors" src="../assets/scissors.svg"
           alt="Scissors" />
-        <input class="b-l" type="image" id="button-lizard" value="lizard" src="../assets/lizard.svg" alt="Lizard" />
-        <input type="image" id="button-spock" value="spock" src="../assets/spock.svg" alt="Rock" />
-      </div>
-      <div class="buttons-comuter column col-m-6">
-        <div class="button-computer">
-          <input type="image" id="computer" src="../assets/computer.svg" class="button button-computer"
-            value="computer" />
+          </div>
         </div>
-        <div class="button-reset">
-          <input type="button" id="reset" class="button button-reset" value="RESET" />
+        <div class="row">
+          <div class="col-m-6 button-lizard">
+            <input type="image" id="button-lizard" value="lizard" src="../assets/lizard.svg" alt="Lizard" />
+          </div>
+          <div class="col-m-6 button-spock">
+            <input type="image" id="button-spock" value="spock" src="../assets/spock.svg" alt="Rock"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-m-2 start-button">
+        <input type="button" id="reset" value="RESTART"/>
+      </div>
+      <div class="buttons-computer column col-m-5">
+        <div class="computer">
+          <input type="image" id="computer" src="../assets/computer.svg"/>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="result column col-m-12">
-        <p id="target">Result</p>
+    <div class="result">
+        <p id="target"></p>
       </div>
-    </div>
+    
   </div>
 
   <div class="score">
