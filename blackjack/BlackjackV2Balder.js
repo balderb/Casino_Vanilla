@@ -117,13 +117,19 @@
         // Print the text in onto the HTML page inside the DOM
          document.getElementById("output").innerHTML = `${ActionToTake}`; // commented out for redundancy (again^2!)
   
+
+
+
+        // *** I DON'T THINK WE NEED THIS PART ANYMORE UNTIL LINE 127 ***
         // Player
         // store the suits and the value of every player card in the empty string resultPCards. Use += to not overwrite each time but add to the string.
         var i;
         for (i = 0; i < playerCards.length; i++) {
             resultPCards += `${playerCards[i].Value} of ${playerCards[i].Suits} </br>`;
         }
-  
+        
+
+
         // Print the string resultPCards in the HTML
         document.getElementById("result").innerHTML = `Your hand is ${totalVPlayer}`;
         // Change the visibility of the images in the html
@@ -135,11 +141,16 @@
   
         // Computer
         // store the suits and the value of every computer card in the empty string resultPComputer. Use += to not overwrite each time but add to the string.
+        // *** I DON'T THINK WE NEED THIS PART ANYMORE UNTIL LINE 149 ***
+        
         var i;
         for (i = 0; i < computerCards.length; i++) {
             resultPComputer += `${computerCards[i].Value} of ${computerCards[i].Suits} </br>`;
         }
   
+
+
+
         // Print the string resultPComputer in the HTML
          document.getElementById("resultComputer").innerHTML = `The computers' hand is ${totalVComputer}`;
         // Change the visibility of the images in the html
@@ -168,12 +179,15 @@
   
         resultPCards = ""; // reset the string resultPCards to empty
         // store the suits and the value of every player card in the empty string resultPCards. Use += to not overwrite each time but add to the string.
+        // *** HERE I ALSO DON'T THINK WE NEED THIS PART until line 188 ANYMORE ***
         var i;
         for (i = 0; i < playerCards.length; i++) {
             resultPCards += `${playerCards[i].Value} of ${playerCards[i].Suits} </br>`;
         }
-        document.getElementById("result").innerHTML = resultPCards; // Print the result in the innerHTML
+        
+        document.getElementById("result").innerHTML = `Your hand is ${totalVPlayer}`; // Print the result in the innerHTML
   
+
         // If the player has 3 cards, change the visibility of the 3th image in the html and change the source
         if (playerCards.length == 3) {
             document.getElementById("cardPThree").style.visibility = "visible";
@@ -215,10 +229,12 @@
   
         resultPComputer = ""; // reset the string resultPComputer to empty
         // store the suits and the value of every computer card in the empty string resultPComputer. Use += to not overwrite each time but add to the string.
+        // **** I DONT THINK WE NEED THIS SECTION UNTIL LINE 237 ANYMORE  ****
         var i;
         for (i = 0; i < computerCards.length; i++) {
             resultPComputer += `${computerCards[i].Value} of ${computerCards[i].Suits} </br>`;
         }
+        
         document.getElementById("resultComputer").innerHTML = resultPComputer;
   
         // If the computer has 3 cards, change the visibility of the 3th image in the html and change the source
