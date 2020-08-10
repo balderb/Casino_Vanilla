@@ -154,7 +154,7 @@ body {
 .header h1 {
   font-family: 'Raleway', sans-serif;
   color: #E6E6E6;
-  font-size: 45px;
+  font-size: 65px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -163,14 +163,14 @@ body {
 .header h2 {
   font-family: 'Alex Brush', cursive;
   color: #F0EC7B;
-  font-size: 70px;
+  font-size: 90px;
   font-weight: lighter;
   text-align: right;
   margin-top: -60px;
   margin-right: 275px;
   text-shadow: 6px 6px 10px #000000a8;
   text-align: center;
-  margin-left: 28%;
+  margin-left: 38%;
 }
 
 .center {

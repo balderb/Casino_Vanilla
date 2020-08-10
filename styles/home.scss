@@ -13,28 +13,29 @@ body {
 // given by Lisa
 .header {
   margin-top: 70px;
+
   h1 {
-      font-family: 'Raleway', sans-serif;
-      color: $lightGrey;
-      font-size: 45px;
-      font-weight: 600;
-      text-transform: uppercase;
-      text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: $lightGrey;
+    font-size: 65px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   h2 {
-      font-family: 'Alex Brush', cursive;
-      color: $yellow;
-      font-size: 70px;
-      font-weight: lighter;
-      text-align: right;
-      margin-top: -60px;
-      margin-right: 275px;
-      text-shadow: 6px 6px 10px #000000a8;
-      text-align: center;
-      margin-left: 28%;
+    font-family: 'Alex Brush', cursive;
+    color: $yellow;
+    font-size: 90px;
+    font-weight: lighter;
+    text-align: right;
+    margin-top: -60px;
+    margin-right: 275px;
+    text-shadow: 6px 6px 10px #000000a8;
+    text-align: center;
+    margin-left: 38%;
   }
-} 
+}
 
 .center {
   display: block;
