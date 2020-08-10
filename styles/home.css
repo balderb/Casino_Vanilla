@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 [class*="col-"] {
@@ -143,17 +142,38 @@
 
 body {
   background-color: #202020;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin: 0;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  padding-top: 70px;
-  padding-bottom: 30px;
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.header {
+  margin-top: 70px;
+}
+
+.header h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #E6E6E6;
+  font-size: 65px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header h2 {
+  font-family: 'Alex Brush', cursive;
+  color: #F0EC7B;
+  font-size: 90px;
+  font-weight: lighter;
+  text-align: right;
+  margin-top: -80px;
+  margin-right: 275px;
+  text-shadow: 6px 6px 10px #000000a8;
+  text-align: center;
+  margin-left: 38%;
 }
 
 .column {
@@ -177,6 +197,8 @@ body {
   color: #E6E6E6;
   font-size: 50px;
   font-style: italic;
+  font-size: 28px;
+  padding-bottom: 10px;
 }
 
 .card .btn-play {
@@ -187,6 +209,7 @@ body {
   padding: 10px 20px;
   color: #E6E6E6;
   margin-left: 16%;
+  font-size: 20px;
 }
 
 .card a {
