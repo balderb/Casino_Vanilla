@@ -154,15 +154,15 @@
   font-family: 'Raleway', sans-serif;
   background-color: #202020;
   border: 2px solid #F0EC7B;
-  font-size: 24px;
-  padding: 10px 20px;
+  font-size: 12px;
+  padding: 10px 10px;
   color: #E6E6E6;
 }
 
 body {
   background-color: #201f20;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 90px;
+  margin-right: 90px;
   color: white;
   font-size: 24px;
 }
@@ -186,7 +186,7 @@ body {
 }
 
 .cardpx {
-  width: 185px;
+  width: 120px;
   display: inline-block;
 }
 

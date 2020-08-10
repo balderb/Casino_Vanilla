@@ -115,7 +115,7 @@
       ActionToTake = textActionOne(totalVPlayer, totalVComputer); // Create the text with the result of the first compare function
 
       // Print the text in onto the HTML page inside the DOM
-      document.getElementById("output").innerHTML = `Your hand is ${totalVPlayer}. <br> The computers' hand is ${totalVComputer}. <br> ${ActionToTake}`;
+       document.getElementById("output").innerHTML = `${ActionToTake}`; // commented out for redundancy (again^2!)
 
       // Player
       // store the suits and the value of every player card in the empty string resultPCards. Use += to not overwrite each time but add to the string.
@@ -125,7 +125,7 @@
       }
 
       // Print the string resultPCards in the HTML
-      document.getElementById("result").innerHTML = resultPCards;
+      document.getElementById("result").innerHTML = `Your hand is ${totalVPlayer}`;
       // Change the visibility of the images in the html
       document.getElementById("cardPOne").style.visibility = "visible";
       document.getElementById("cardPTwo").style.visibility = "visible";
@@ -141,7 +141,7 @@
       }
 
       // Print the string resultPComputer in the HTML
-      document.getElementById("resultComputer").innerHTML = resultPComputer;
+       document.getElementById("resultComputer").innerHTML = `The computers' hand is ${totalVComputer}`;
       // Change the visibility of the images in the html
       document.getElementById("cardCOne").style.visibility = "visible";
       document.getElementById("cardCTwo").style.visibility = "visible";
@@ -163,7 +163,7 @@
       ActionToTake = textActionOne(totalVPlayer, totalVComputer); // Create the text with the result of the first compare function
 
       // Overprint the text in the HTML
-      document.getElementById("output").innerHTML = `Your hand is ${totalVPlayer} <br> The computers' hand is ${totalVComputer} <br> ${ActionToTake}`;
+       document.getElementById("result").innerHTML = `${ActionToTake}`;
 
       resultPCards = ""; // reset the string resultPCards to empty
       // store the suits and the value of every player card in the empty string resultPCards. Use += to not overwrite each time but add to the string.
@@ -210,7 +210,7 @@
 
       ActionToTake = textActionTwo(totalVPlayer, totalVComputer); // Create the text with the result of the second compare function
       // Overprint the text in the HTML
-      document.getElementById("output").innerHTML = `Your hand is ${totalVPlayer} <br> The computers' hand is ${totalVComputer} <br> ${ActionToTake}`; // 
+       document.getElementById("output").innerHTML = `${ActionToTake}`; // removed for redundancy (again!)
 
       resultPComputer = ""; // reset the string resultPComputer to empty
       // store the suits and the value of every computer card in the empty string resultPComputer. Use += to not overwrite each time but add to the string.
