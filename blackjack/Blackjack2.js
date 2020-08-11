@@ -45,20 +45,25 @@
         let resultOne;
         if (b == 21) {
             resultOne = `I'm sorry, the computer wins!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             totalGames();
         } else if (a > 21) {
             resultOne = `You are busted. The computer just won the game!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             totalGames();
         } else if (a == 21 && b != 21) {
             resultOne = `Congratulations, you win!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             scorePlayer21();
             totalScore();
             totalGames();
         } else if (a == 21 && b == 21) {
             resultOne = `That's a pity, the computer still wins!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             totalGames();
         } else if (a < 21 && b > 21) {
             resultOne = `Congratulations, you win!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             scorePlayer21();
             totalScore();
             totalGames();
@@ -73,22 +78,27 @@
         let resultTwo;
         if (b == 21) {
             resultTwo = `I'm sorry, the computer wins!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             totalGames();
         } else if (b > 21) {
             resultTwo = `The computer is busted. You win!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             scorePlayer21();
             totalScore();
             totalGames();
         } else if (a < b) {
             resultTwo = `I'm sorry, the computer wins!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             totalGames();
         } else if (a > b) {
             resultTwo = `Congratulations, you win!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             totalScore();
             scorePlayer21();
             totalGames();
         } else if (a = b) {
             `I'm sorry, the computer wins!`;
+            document.querySelector('.buttonsGame').style.visibility="hidden";
             totalGames();
         }
         return resultTwo;
@@ -208,8 +218,11 @@
     // WHEN THE PLAYER DECIDES TO STAND
     document.getElementById("stand").addEventListener('click', () => {
         // If the computer has not 15 yet, give him a card
+        document.querySelector('#draw').style.visibility="hidden";
+        
         if (totalVComputer < 15) {
             computerCards.push(deck.pop());
+
         };
   
         // Get the sum of all the Points in the computerCards array

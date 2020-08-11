@@ -45,20 +45,25 @@
       let resultOne;
       if (b == 21) {
           resultOne = `I'm sorry, the computer wins!`;
+          document.querySelector('.buttonsGame').style.visibility="hidden";
           totalGames();
       } else if (a > 21) {
           resultOne = `You are busted. The computer just won the game!`;
+          document.querySelector('.buttonsGame').style.visibility="hidden";
           totalGames();
       } else if (a == 21 && b != 21) {
           resultOne = `Congratulations, you win!`;
+          document.querySelector('.buttonsGame').style.visibility="hidden";
           scorePlayer21();
           totalScore();
           totalGames();
       } else if (a == 21 && b == 21) {
           resultOne = `That's a pity, the computer still wins!`;
+          document.querySelector('.buttonsGame').style.visibility="hidden";
           totalGames();
       } else if (a < 21 && b > 21) {
           resultOne = `Congratulations, you win!`;
+          document.querySelector('.buttonsGame').style.visibility="hidden";
           scorePlayer21();
           totalScore();
           totalGames();
