@@ -18,7 +18,7 @@ It has been the dream of a young enterprise since the beggining of its short lif
 
 ## How?
 
-The four skilled coders will have to defeat the difficult task of designing something a website that is easy for everyone to understand, from sweet old _oma_ with arthritis, :older_woman: :phone: to short-attention-span, tik-tok generation _youngsters_ :baby: :iphone: <br>
+The four skilled coders will have to defeat the difficult task of designing something a website that is easy for everyone to understand.
 Will they apply good and consistent design throughout all the website? <br>
 Will they bring more than two games to the website? <br>
 Will they add some wacky new features we have not seen before? <br>
@@ -26,11 +26,11 @@ Stay tuned for further development!
 
 ## Who?
 
-Top recent news! The police was able to find the names of the skilled coders :busts_in_silhouette: that where brave enough to tackle such an incredible task! Their names are: <br>
+Top recent news! We were able to find the names of the skilled coders who where brave enough to tackle such an incredible task! Their names are: <br>
 [Lisa Baetsle](https://github.com/LisaBaetsle) <br>
 [Karolina Dys](https://github.com/KarolinaDys) <br>
 [Balder Bongaerts](https://github.com/balderb) <br>
 [Alejandro Jose Perdomo Cuello Polania Noguera](https://github.com/AlejandroPerdomoCuello) (that last one sure is a mouthfull!) <br>
-The police was also able to locate the webpage that is being built for Casino_Vanilla! <br>
-Take a closer look!! :astonished: <br>
+
+Take a closer look at the app here <br>
 [Casino_Vanilla](https://balderb.github.io/Casino_Vanilla/index.html). 
