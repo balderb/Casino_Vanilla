@@ -30,7 +30,7 @@ Top recent news! We were able to find the names of the skilled coders who where 
 [Lisa Baetsle](https://github.com/LisaBaetsle) <br>
 [Karolina Dys](https://github.com/KarolinaDys) <br>
 [Balder Bongaerts](https://github.com/balderb) <br>
-[Alejandro Jose Perdomo Cuello Polania Noguera](https://github.com/AlejandroPerdomoCuello) (that last one sure is a mouthfull!) <br>
+[Alejandro Jose Perdomo Cuello Polania Noguera](https://github.com/AlejandroPerdomoCuello) <br>
 
 Take a closer look at the app here <br>
 [Casino_Vanilla](https://balderb.github.io/Casino_Vanilla/index.html). 
