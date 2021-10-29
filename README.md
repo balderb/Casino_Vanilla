@@ -1,6 +1,7 @@
 # Casino_Vanilla :slot_machine:
 
 Welcome to the one and only casino in Vanillaville
+[Casino_Vanilla](https://balderb.github.io/Casino_Vanilla/index.html). 
 
 
 ## What?
