@@ -14,7 +14,7 @@ The first ever casino in Vanillaville will be a fancy _Virtual Casino_. :compute
 
 ## Why?
 
-It has been the dream of a young enterprise since the beggining of its short life. It always brings tears to my eyes to see the dream of a small enterprise reach its dreams. :cry:
+It has been the dream of a young enterprise since the beggining of its short life.
 
 ## How?
 
