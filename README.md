@@ -18,7 +18,7 @@ It has been the dream of a young enterprise since the beggining of its short lif
 
 ## How?
 
-The four skilled coders will have to defeat the difficult task of designing something a website that is easy for everyone to understand.
+The four skilled coders will have to defeat the difficult task of designing something a website that is easy for everyone to understand. <br>
 Will they apply good and consistent design throughout all the website? <br>
 Will they bring more than two games to the website? <br>
 Will they add some wacky new features we have not seen before? <br>
